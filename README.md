@@ -12,12 +12,12 @@
 Repositories
 ----
 
-다음은 각각 자신의 Repository를 갖고 있습니다.
-
-- 한 종류의 서버
-- 페미위키에서 제작한 Docker Image
-- [Amazon Machine Images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
+- [서버](https://github.com/femiwiki?q=docker-compose+server)
+- [페미위키에서 제작한 Docker Image](https://github.com/femiwiki?q=docker-image)
+- [Amazon Machine Image](https://github.com/femiwiki/ami)
 - 페미위키에서 개발한 미디어위키 플러그인
+    - [페미위키 스킨](https://github.com/femiwiki/skin)
+    - [확장 기능](https://github.com/femiwiki?q=mediawiki-extension)
 
 서버 현황
 ----
