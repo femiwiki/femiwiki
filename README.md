@@ -16,18 +16,31 @@ Repositories
 - [페미위키에서 제작한 Docker Image](https://github.com/femiwiki?q=docker-image)
 - [Amazon Machine Image](https://github.com/femiwiki/ami)
 - 페미위키에서 개발한 미디어위키 플러그인
-    - [페미위키 스킨](https://github.com/femiwiki/skin)
-    - [확장 기능](https://github.com/femiwiki?q=mediawiki-extension)
+  - [페미위키 스킨](https://github.com/femiwiki/skin)
+  - [확장 기능](https://github.com/femiwiki?q=mediawiki-extension)
 
-서버 현황
+현황
 ----
+
+### 서버
+
+[Amazon EC2](https://aws.amazon.com/ec2/)를 사용하여 다음과 같이 가상 서버를 운영중입니다.
 
 |이름|기능|서버 수|
 -|-|-
-|mediawiki|mediawiki를 비롯한 웹 서버|1*|
-|database|MySQL과 웹 서버의 캐시, 크론잡 등|1|
+|[mediawiki](https://github.com/femiwiki/mediawiki)|mediawiki를 비롯한 웹 서버|1*|
+|[database](https://github.com/femiwiki/database)|MySQL과 웹 서버의 캐시, 크론잡 등|1|
 
 (*) 오토스케일링을 목표로 하고 있어 추후 증가할 수 있음
+
+### 기타
+
+아래 서비스를 사용중입니다.
+
+- [Amazon Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/)
+- [Amazon S3](https://aws.amazon.com/s3/)
+- [Amazon Simple Email Service](https://aws.amazon.com/ses/)
+- [Amazon Route53](https://aws.amazon.com/route53/)
 
 이슈 트래킹
 ----
