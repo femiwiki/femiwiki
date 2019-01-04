@@ -24,10 +24,10 @@
 
 [Amazon EC2](https://aws.amazon.com/ec2/)를 사용하며 다음과 같이 가상 서버를 운영중입니다.
 
-|이름|기능|서버 수
--|-|-
-|[mediawiki](https://github.com/femiwiki/mediawiki)|mediawiki를 비롯한 웹 서버|1*|
-|[database](https://github.com/femiwiki/database)|MySQL과 웹 서버의 캐시, 크론잡 등|1|
+이름 | 기능 | 서버 수
+-----|------|-----
+[mediawiki] | mediawiki를 비롯한 웹 서버 | 1*
+[database] | MySQL과 웹 서버의 캐시, 크론잡 등 | 1
 
 (*) 오토스케일링을 목표로 하고 있어 추후 증가할 수 있음
 
@@ -57,6 +57,8 @@ of the [GNU Affero General Public License v3.0] or any later version. See
 [페미위키]: https://femiwiki.com
 [AWS]: https://aws.amazon.com
 [Docker]: https://docker.com/
-[Docker Hub]: https://hub.docker.com/
+[Docker Hub]: https://hub.docker.com/u/femiwiki/
+[mediawiki]: https://github.com/femiwiki/mediawiki
+[database]: https://github.com/femiwiki/database
 [GNU Affero General Public License v3.0]: LICENSE
 [COPYRIGHT]: COPYRIGHT
