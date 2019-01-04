@@ -1,16 +1,13 @@
-페미위키
-========
+# 페미위키
 
 한국의 페미니즘 위키 [페미위키]에 대한 기술 정보 개괄 및 기타 이슈 트래킹용 Repository.
 
-개요
-----
+## 개요
 
 페미위키는 [AWS]를 통해 복수의 서버로 운영되고 있으며 각 서버는 [Docker]를 통해 여러 서비스를 실행하고 있습니다. 일부 Docker image는 페미위키에서 제작한 것으로 [Docker Hub]를 통해 배포되고 있습니다.
 한편 미디어위키는 플러그인을 지원하며 플러그인들은 확장 기능(Extension) 또는 스킨(Skin)이라는 용어로 지칭되는데, 페미위키에서는 '페미위키 스킨'을 비롯한 몇 개의 플러그인들을 개발하여 사용하고 있습니다.
 
-Repositories
-----
+## Repositories
 
 - [서버](https://github.com/femiwiki?q=docker-compose+server)
 - [페미위키에서 제작한 Docker Image](https://github.com/femiwiki?q=docker-image)
@@ -19,8 +16,7 @@ Repositories
   - [페미위키 스킨](https://github.com/femiwiki/skin)
   - [확장 기능](https://github.com/femiwiki?q=mediawiki-extension)
 
-현황
-----
+## 현황
 
 ### 서버
 
@@ -42,8 +38,7 @@ Repositories
 - [Amazon Simple Email Service](https://aws.amazon.com/ses/)
 - [Amazon Route53](https://aws.amazon.com/route53/)
 
-이슈 트래킹
-----
+## 이슈 트래킹
 
 이슈는 종류에 따라 각각의 Repository에 위치하며, 전반적인 서버 관리 등 해당하는 Repository가 없는 경우에는 이 Repository(femiwiki/femiwiki)에 작성됩니다. 페미위키는 또한 이슈를 포함한 계획과 목표를 관리하기 위해 [Github의 프로젝트 보드](https://github.com/orgs/femiwiki/projects/1)를 사용할 예정입니다.
 
