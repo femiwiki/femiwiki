@@ -22,7 +22,7 @@
 
 [Amazon EC2](https://aws.amazon.com/ec2/)를 사용하여 다음과 같이 가상 서버를 운영중입니다.
 
-|이름|기능|서버 수|
+|이름|기능|서버 수
 -|-|-
 |[mediawiki](https://github.com/femiwiki/mediawiki)|mediawiki를 비롯한 웹 서버|1*|
 |[database](https://github.com/femiwiki/database)|MySQL과 웹 서버의 캐시, 크론잡 등|1|
