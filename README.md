@@ -46,6 +46,11 @@
 
 이슈나 버그에 있을 때는 언제든 편히 남겨주세요.
 
+## 라이센스
+
+페미위키의 코드는 기본적으로 AGPLv3 라이선스로 공개되어 있으며, 자세한 정보는 각 Repository 별로 명시되어 있습니다.
+(AGPLv3는 미디어위키의 라이선스 정책인 "GPLv2 혹은 그 이상"과 호환됩니다. 자세한 정보는 [GNU FAQ](https://www.gnu.org/licenses/gpl-faq.en.html#v2v3Compatibility)를 참고하세요)
+
 &nbsp;
 
 --------
