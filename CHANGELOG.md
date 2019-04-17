@@ -4,6 +4,7 @@
 
 ## 2019-04
 
+- **[2019-04-17T16:24+0900]** S3 버킷 라이프사이클 "Transition mysql dumps to Glacier Deep Archive after 14 days" 생성
 - **[2019-04-16T14:08+0900]** database+bots 인스턴스의 bots_backupbot 콘테이너 이미지를 [build-4](https://github.com/femiwiki/backupbot/releases/tag/build-4)로 교체함
 - **[2019-04-15T16:05+0900]** S3 버킷 라이프사이클 삭제함
 
