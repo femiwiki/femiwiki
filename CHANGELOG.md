@@ -4,6 +4,8 @@
 
 ## 2019-04
 
+- **[2019-04-18T15:06+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 및 `/home/ec2-user/mediawiki/configs/secret.php` 파일 직접 수정(https://github.com/femiwiki/mediawiki/commit/c3ab22d9a555d0ad4f2b311e6d7519e0dd3eab94)
+  > 구글 통계 ID 이동
 - **[2019-04-18T14:14+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/a55eafc636465bae3be2b680a85a419ed2927c7d)
   > 차단 보조기능 활성화
 - **[2019-04-17T22:15+0900]** mediawiki 인스턴스의 femiwiki_files 볼륨 내 파일 직접 수정(https://github.com/femiwiki/skin/commit/5a5531c4d49fd7e5f427e43f1beef499bb4df19f)
