@@ -4,6 +4,8 @@
 
 ## 2019-04
 
+- **[2019-04-18T14:14+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/a55eafc636465bae3be2b680a85a419ed2927c7d)
+  > 차단 보조기능 활성화
 - **[2019-04-17T22:15+0900]** mediawiki 인스턴스의 femiwiki_files 볼륨 내 파일 직접 수정(https://github.com/femiwiki/skin/commit/5a5531c4d49fd7e5f427e43f1beef499bb4df19f)
   > 가입 질문 복사 방지
 - **[2019-04-16T16:50+0900]** database+bots 인스턴스의 bots_backupbot 콘테이너 이미지를 [build-5](https://github.com/femiwiki/backupbot/releases/tag/build-5)로 교체함
