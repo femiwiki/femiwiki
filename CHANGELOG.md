@@ -3,7 +3,7 @@
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
 ## 2019-04
-
+- **[2019-04-22T16:11+0900]** database+bots 인스턴스에 atop 설치함. 나중에 다시 삭제해야함 자세한것은 [#64](https://github.com/femiwiki/femiwiki/issues/64) 참고.
 - **[2019-04-22T02:30+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/compare/ae7d7253bbb7...14e91dc0737a)
 - **[2019-04-20T05:08+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-8](https://github.com/femiwiki/mediawiki/releases/tag/build-8)로 교체하면서 femiwiki_files 볼륨도 재생성함.
 - **[2019-04-20T05:00+0900]** mediawiki 인스턴스의 femiwiki 스택과 femiwiki_files 볼륨을 재생성함. (실수로 빌드 버전 안올림)
