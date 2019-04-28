@@ -4,6 +4,8 @@
 
 ## 2019-04
 
+- **[2019-04-28T13:16+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/31de71b1f6e071ceaed6c0de4fed8cea5727f98e)
+  <details>디스코드 알림 설정 변경</details>
 - **[2019-04-27T14:57+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/8e042b35e22b0c3e8a0dc520d086ce227c4b53e1)
   <details>Seeder 권한 편집 허용</details>
 - **[2019-04-22T16:11+0900]** database+bots 인스턴스에 atop 설치함. 나중에 다시 삭제해야함 자세한것은 [#64](https://github.com/femiwiki/femiwiki/issues/64) 참고.
