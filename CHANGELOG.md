@@ -4,6 +4,8 @@
 
 ## 2019-04
 
+- **[2019-05-04T05:03+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-9](https://github.com/femiwiki/mediawiki/releases/tag/build-9)로 교체하면서 femiwiki_files 볼륨도 재생성함.
+  <details>정기 배포, 미디어위키 1.32.1 업그레이드 등.</details>
 - **[2019-05-01T17:51+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/1b30e97e25d1933f85dc0fd374c32a2492a6ea79)
   <details>편집 필터 관련 권한 조정</details>
 - **[2019-04-28T13:16+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/31de71b1f6e071ceaed6c0de4fed8cea5727f98e)
