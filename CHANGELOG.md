@@ -4,7 +4,7 @@
 
 ## 2019-05
 
-- **[2019-05-09T15:50+0900]** database+bots 인스턴스에서 사용중인 Volumeh의 타입을 standard에서 gp2로 변경(https://github.com/femiwiki/femiwiki/issues/81)
+- **[2019-05-09T15:50+0900]** database+bots 인스턴스에서 사용중인 Volume의 타입을 standard에서 gp2로 변경(https://github.com/femiwiki/femiwiki/issues/81)
 - **[2019-05-08T18:34+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 내 파일 수정(https://github.com/femiwiki/skin/commit/b752208381eca896989211e54aae7a5998dedf9a)
 - **[2019-05-04T05:03+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-9](https://github.com/femiwiki/mediawiki/releases/tag/build-9)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   <details>정기 배포, 미디어위키 1.32.1 업그레이드 등.</details>
