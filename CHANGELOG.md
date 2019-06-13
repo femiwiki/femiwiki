@@ -2,6 +2,10 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2019-06
+
+- **[2019-06-13]** mediawiki 인스턴스 문제 해결(https://github.com/femiwiki/femiwiki/issues/84)
+
 ## 2019-05
 
 - **[2019-05-09T15:50+0900]** database+bots 인스턴스에서 사용중인 Volume의 타입을 standard에서 gp2로 변경(https://github.com/femiwiki/femiwiki/issues/81)
