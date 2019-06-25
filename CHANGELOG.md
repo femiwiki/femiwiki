@@ -4,6 +4,7 @@
 
 ## 2019-06
 
+- **[2019-06-26T01:26+0900]** database+bots 인스턴스의 bots_rankingbot 콘테이너 이미지를 [build-1](https://github.com/femiwiki/rankingbot/releases/tag/build-1)로 교체함.
 - **[2019-06-13]** mediawiki 인스턴스 문제 해결(https://github.com/femiwiki/femiwiki/issues/84)
 
 ## 2019-05
