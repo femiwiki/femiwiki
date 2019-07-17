@@ -2,6 +2,13 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2019-07
+
+- **[2019-07-13T05:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-11](https://github.com/femiwiki/mediawiki/releases/tag/build-11)로 교체하면서 femiwiki_files 볼륨도 재생성함.
+  <details>정기 배포</details>
+- **[2019-07-09T05:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-10](https://github.com/femiwiki/mediawiki/releases/tag/build-10)로 교체하면서 femiwiki_files 볼륨도 재생성함.
+  <details>정기 배포, 미디어위키 1.32.3 업그레이드 등.</details>
+
 ## 2019-06
 
 - **[2019-06-26T01:43+0900]** database+bots 인스턴스의 bots_rankingbot 콘테이너 이미지를 [build-2](https://github.com/femiwiki/rankingbot/releases/tag/build-2)로 교체함.
