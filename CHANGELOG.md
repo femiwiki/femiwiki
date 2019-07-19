@@ -4,6 +4,8 @@
 
 ## 2019-07
 
+
+- **[2019-07-20T08:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 내 파일 수정(https://github.com/femiwiki/mediawiki/commit/0e5b9797b32c004176f80f0b6056f1dfe63cf60d)
 - **[2019-07-20T06:10+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 내 파일 수정(https://github.com/femiwiki/skin/commit/3600b47b227b52712fa14880abbefc5ae0d27ff6)
 - **[2019-07-20T05:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-12](https://github.com/femiwiki/mediawiki/releases/tag/build-12)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   <details>정기 배포</details>
