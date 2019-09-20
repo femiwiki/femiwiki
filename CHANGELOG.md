@@ -4,7 +4,9 @@
 
 ## 2019-09
 
-- **[2019-06-26T01:43+0900]** database+bots 인스턴스의 MySQL과 Memcached 버전 업.
+- **[2019-09-21T06:20+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-15](https://github.com/femiwiki/mediawiki/releases/tag/build-15)로 교체하면서 femiwiki_files 볼륨도 재생성함.
+  <details>정기 배포</details>
+- **[2019-09-11T05:00+0900]** database+bots 인스턴스의 MySQL과 Memcached 버전 업.
   <details>https://github.com/femiwiki/femiwiki/issues/89 작업과 함께 MySQL 8.0.13 → 8.0.17, Memcached 1.5.12 → 1.5.17 업그레이드</details>
 
 ## 2019-08
