@@ -4,6 +4,10 @@
 
 ## 2019-09
 
+- **[2019-09-21T06:24+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 내 파일 수정
+  <details>https://raw.githubusercontent.com/femiwiki/DiscordNotifications/a67b7b7/i18n/ko.json 파일 생성</details>
+
+
 - **[2019-09-21T06:20+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-15](https://github.com/femiwiki/mediawiki/releases/tag/build-15)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   <details>정기 배포</details>
 - **[2019-09-11T05:00+0900]** database+bots 인스턴스의 MySQL과 Memcached 버전 업.
