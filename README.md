@@ -13,7 +13,7 @@
 - [Docker Image](https://github.com/femiwiki?q=docker-image)
 - [Amazon Machine Image](https://github.com/femiwiki/ami)
 - 미디어위키 플러그인
-  - [페미위키 스킨](https://github.com/femiwiki/skin)
+  - [페미위키 스킨](https://github.com/femiwiki/FemiwikiSkin)
   - [확장 기능](https://github.com/femiwiki?q=mediawiki-extension)
 
 ## 현황
