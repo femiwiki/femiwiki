@@ -4,6 +4,8 @@
 
 ## 2019-10
 
+- **[2019-10-19T05:03+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-18](https://github.com/femiwiki/mediawiki/releases/tag/build-18)로 교체하면서 femiwiki_files 볼륨도 재생성함.
+  <details>정기 배포</details>
 - **[2019-10-12T06:09+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/207f3d4)
 - **[2019-10-12T05:07+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-17](https://github.com/femiwiki/mediawiki/releases/tag/build-17)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   <details>정기 배포</details>
