@@ -4,7 +4,7 @@
 
 ## 개요
 
-페미위키는 [AWS]를 통해 복수의 서버로 운영되고 있으며 각 서버는 [Docker]를 통해 여러 서비스를 실행하고 있습니다. 일부 Docker image는 페미위키에서 제작한 것으로 [Docker Hub]를 통해 배포되고 있습니다.
+페미위키는 [Terraform]에 의해 [AWS] 상에서 복수의 서버로 운영되고 있으며 각 서버는 [Docker]를 통해 여러 서비스를 실행하고 있습니다. 일부 Docker image는 페미위키에서 제작한 것으로 [Docker Hub]를 통해 배포되고 있습니다.
 또 페미위키는 '페미위키 스킨'을 비롯한 몇 개의 미디어위키 플러그인을 개발하여 사용하고 있습니다.
 
 ## Repositories
@@ -26,14 +26,12 @@
 
 이름 | 기능 | 서버 수
 -----|------|-----
-[mediawiki] | mediawiki를 비롯한 웹 서버 | 1*
+[mediawiki] | mediawiki를 비롯한 웹 서버 | 1
 [database] | MySQL과 웹 서버의 캐시, 크론잡 등 | 1
-
-(*) 오토스케일링을 목표로 하고 있어 추후 증가할 수 있음
 
 ### 기타
 
-아래 서비스를 사용중입니다.
+아래 서비스를 사용중입니다. [Terraform]을 통해 관리되고 있어 [femiwiki/FemiwikiSkin](https://github.com/femiwiki/FemiwikiSkin) Repository를 참고할 수 있습니다.
 
 - [Amazon Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/)
 - [Amazon S3](https://aws.amazon.com/s3/)
@@ -60,10 +58,11 @@ of the [GNU Affero General Public License v3.0] or any later version. See
 [COPYRIGHT] for details.
 
 [페미위키]: https://femiwiki.com
-[AWS]: https://aws.amazon.com
-[Docker]: https://docker.com/
-[Docker Hub]: https://hub.docker.com/u/femiwiki/
+[aws]: https://aws.amazon.com
+[terraform]: https://terraform.io
+[docker]: https://docker.com/
+[docker hub]: https://hub.docker.com/u/femiwiki/
 [mediawiki]: https://github.com/femiwiki/mediawiki
 [database]: https://github.com/femiwiki/database
-[GNU Affero General Public License v3.0]: LICENSE
-[COPYRIGHT]: COPYRIGHT
+[ung affero general public license v3.0]: LICENSE
+[copyright]: COPYRIGHT
