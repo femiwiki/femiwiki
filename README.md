@@ -31,7 +31,7 @@
 
 ### 기타
 
-아래 서비스를 사용중입니다. [Terraform]을 통해 관리되고 있어 [femiwiki/FemiwikiSkin](https://github.com/femiwiki/FemiwikiSkin) Repository를 참고할 수 있습니다.
+아래 서비스를 사용중입니다. [Terraform]을 통해 관리되고 있어 [femiwiki/infra] Repository를 참고할 수 있습니다.
 
 - [Amazon Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/)
 - [Amazon S3](https://aws.amazon.com/s3/)
@@ -64,5 +64,6 @@ of the [GNU Affero General Public License v3.0] or any later version. See
 [docker hub]: https://hub.docker.com/u/femiwiki/
 [mediawiki]: https://github.com/femiwiki/mediawiki
 [database]: https://github.com/femiwiki/database
+[femiwiki/infra]: https://github.com/femiwiki/infra
 [ung affero general public license v3.0]: LICENSE
 [copyright]: COPYRIGHT
