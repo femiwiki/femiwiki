@@ -65,5 +65,5 @@ of the [GNU Affero General Public License v3.0] or any later version. See
 [mediawiki]: https://github.com/femiwiki/mediawiki
 [database]: https://github.com/femiwiki/database
 [femiwiki/infra]: https://github.com/femiwiki/infra
-[ung affero general public license v3.0]: LICENSE
+[gnu affero general public license v3.0]: LICENSE
 [copyright]: COPYRIGHT
