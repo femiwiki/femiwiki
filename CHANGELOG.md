@@ -11,6 +11,10 @@
 - **[2019-10-12T06:09+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/207f3d4)
 - **[2019-10-12T05:07+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-17](https://github.com/femiwiki/mediawiki/releases/tag/build-17)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   <details>정기 배포</details>
+- Zapier가 하던 일들을 이런저런 서비스들로 대체하면서 Zapier를 무료플랜으로 내렸음 https://github.com/femiwiki/femiwiki/issues/100#issuecomment-541664344
+- AWS 인프라 테라폼 코드로 관리할 수 있도록 함 https://github.com/femiwiki/infra/issues/1
+- <https://translatewiki.net>에서 페미위키 확장기능을 번역할 수 있도록 세팅함 https://github.com/femiwiki/femiwiki/issues/91
+- 디스코드 공개 채널인 #개발 채널 다시 활성화함
 
 ## 2019-09
 
