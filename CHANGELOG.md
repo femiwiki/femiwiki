@@ -4,6 +4,7 @@
 
 ## 2019-10
 
+- **[2019-10-29T20:50+0900]** mediawiki 인스턴스의 femiwiki_mediawiki에서 `docker image rm femiwiki/mediawiki:build-17 femiwiki/mediawiki:build-18` 실행
 - **[2019-10-26T05:05+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-19](https://github.com/femiwiki/mediawiki/releases/tag/build-19)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   <details>정기 배포</details>
 - **[2019-10-19T05:03+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-18](https://github.com/femiwiki/mediawiki/releases/tag/build-18)로 교체하면서 femiwiki_files 볼륨도 재생성함.
