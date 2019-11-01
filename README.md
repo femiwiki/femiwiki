@@ -11,6 +11,7 @@
 - [페미위키 이슈 트래커](https://github.com/femiwiki/femiwiki/issues)
 - [페미위키 개발팀 칸반 보드](https://github.com/orgs/femiwiki/projects/1)
 - [페미위키 개발팀 주별/분기별 목표](https://github.com/femiwiki/femiwiki/milestones)
+- [페미위키 개발팀 블로그](https://femiwiki.com/w/%ED%8E%98%EB%AF%B8%EC%9C%84%ED%82%A4:%EA%B0%9C%EB%B0%9C_%EB%B8%94%EB%A1%9C%EA%B7%B8)
 
 페미위키에 이슈나 버그, 원하시는 건의사항이 있으실 경우 언제든지 편하게 이슈를
 남겨주세요.
