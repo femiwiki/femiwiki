@@ -2,6 +2,11 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2019-11
+
+- **[2019-11-02T05:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-20](https://github.com/femiwiki/mediawiki/releases/tag/build-20)로 교체하면서 femiwiki_files 볼륨도 재생성함.
+  <details>정기 배포</details>
+
 ## 2019-10
 
 - **[2019-10-29T20:50+0900]** mediawiki 인스턴스의 femiwiki_mediawiki에서 `docker image rm femiwiki/mediawiki:build-17 femiwiki/mediawiki:build-18` 실행
