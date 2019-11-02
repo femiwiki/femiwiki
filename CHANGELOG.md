@@ -4,6 +4,7 @@
 
 ## 2019-11
 
+- **[2019-11-02T11:30+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 `srv/femiwiki.com/extensions/DiscordNotifications/i18n`에 https://github.com/femiwiki/DiscordNotifications/blob/1160023/i18n/ko.json 다운로드함.
 - **[2019-11-02T05:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-20](https://github.com/femiwiki/mediawiki/releases/tag/build-20)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   <details>정기 배포</details>
 
@@ -75,32 +76,26 @@
   - **[2019-04-20T05:08+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-8](https://github.com/femiwiki/mediawiki/releases/tag/build-8)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   - **[2019-04-20T05:00+0900]** mediawiki 인스턴스의 femiwiki 스택과 femiwiki_files 볼륨을 재생성함. (실수로 빌드 버전 안올림)
   - **[2019-04-20T04:59+0900]** mediawiki 인스턴스의 `/home/ec2-user/mediawiki/configs/secret.php` 파일 직접 수정(https://github.com/femiwiki/mediawiki/commit/a4d262e).
-
   <details>정기배포. DiscordNotifications 확장기능 설치.</details>
-
 - **[2019-04-18T15:06+0900]** mediawiki 인스턴스 `/home/ec2-user/configs/mediawiki/`의 LocalSettings.php 및 secret.php 파일 직접 수정(https://github.com/femiwiki/mediawiki/commit/c3ab22d)
   <details>구글 통계 ID 이동</details>
 - **[2019-04-18T14:14+0900]** mediawiki 인스턴스의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/a55eafc)
   <details>차단 보조기능 활성화</details>
 - **[2019-04-17T22:15+0900]** mediawiki 인스턴스의 femiwiki_files 볼륨 내 파일 직접 수정(https://github.com/femiwiki/skin/commit/5a5531c)
   <details>가입 질문 복사 방지</details>
-- - **[2019-04-16T16:50+0900]** database+bots 인스턴스의 bots_backupbot 콘테이너 이미지를 [build-5](https://github.com/femiwiki/backupbot/releases/tag/build-5)로 교체함
-  - **[2019-04-17T16:24+0900]** S3 버킷 라이프사이클 "Transition mysql dumps to Glacier Deep Archive after 14 days" 생성
+- - **[2019-04-17T16:24+0900]** S3 버킷 라이프사이클 "Transition mysql dumps to Glacier Deep Archive after 14 days" 생성
+  - **[2019-04-16T16:50+0900]** database+bots 인스턴스의 bots_backupbot 콘테이너 이미지를 [build-5](https://github.com/femiwiki/backupbot/releases/tag/build-5)로 교체함
   - **[2019-04-16T14:08+0900]** database+bots 인스턴스의 bots_backupbot 콘테이너 이미지를 [build-4](https://github.com/femiwiki/backupbot/releases/tag/build-4)로 교체함
   - **[2019-04-15T16:05+0900]** S3 버킷 라이프사이클 삭제함
-
   <details>
-
-  https://github.com/femiwiki/femiwiki/issues/73 백업 비용 최적화함. 기존에는 S3에 백업하고 2주 뒤에 Glacier로 옮겼는데, 이제 기본으로 S3 IA에 백업하고 2주 뒤에 Glacier Deep Archive로 옮기도록 수정함.
+  https://github.com/femiwiki/femiwiki/issues/73 백업 비용 최적화함. 기존에는 S3에 백업하고 2주 뒤에 Glacier로 옮겼는데, 이제 기본으로 S3 IA에 백업하고 2주 뒤에 Glacier Deep Archive로 옮기도록 수정함. 최적화와 함께 백업 주기도 2일에 한 번에서 하루에 한 번으로 다시 올림.
 
   S3의 femiwiki-backups 버킷에 저장되는 데이터가 데이터베이스 백업뿐 아니라 그 외 여러가지가 되어, 데이터베이스 백업은 `/mysql/`에 저장하고 그 외 파일은 잠정적으로 루트 경로에 보관하기로 함.
-
   </details>
-
+- **[2019-04-14+0900]** 개발팀에 신규 멤버 3명 참여함
 - **[2019-04-13T06:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-7](https://github.com/femiwiki/mediawiki/releases/tag/build-7)로 교체하면서 femiwiki_files 볼륨도 재생성함.
 
   <details>정기 배포. UnifiedExtensionForFemiwiki 확장기능 업데이트.</details>
-
 - **[2019-04-11T17:30+0900]** mediawiki 인스턴스에서 사용되지 않는 도커 이미지 삭제함.
   <details>일부 문서가 표시되지 않고 자바스크립트가 작동하지 않아 원인 파악 중 [하드디스크 문제](https://github.com/femiwiki/femiwiki/issues/70#issuecomment-482030123)로 밝혀져 조치함.</details>
 
@@ -132,12 +127,33 @@
   <details>정기배포.</details>
 - - **[2019-02-15T06:00+0900]** mediawiki 인스턴스에서 사용되지 않는 도커 이미지 삭제하여 mediawiki 스택 정상 실행됨.
   - **[2019-02-15T05:00+0900]**
-
     - mediawiki 인스턴스의 `/home/ec2-user/mediawiki/configs/LocalSettings.php` 파일 직접 수정(https://github.com/femiwiki/mediawiki/commit/0fdbb34)
     - database+bots 인스턴스에서 femiwiki/restbase:build-0 도커 컨테이너 삭제.
     - mediawiki 인스턴스에서 mediawiki 스택 재생성(femiwiki/restbase:build-1 도커 컨테이너 추가됨). 하드디스크 용량 문제로 정상 실행에 실패함.
     - database+bots 인스턴스에서 femiwiki/cassandra:build-0 도커 컨테이너 실행.
-
   <details>정기배포 및 RESTBase가 실행되는 장소(서버)를 옮기고 데이터베이스를 SQLite(기본값)에서 카산드라로 교체함.</details>
+- **[2019-02-02+0900]** 노동톤 주요성과로 [femiwiki/base] 이미지와 [femiwiki/base-extension] 이미지를 통해 도커 빌드시간 최적화함, [파소이드 버전업](https://github.com/femiwiki/femiwiki/issues/45), Continuous Delivery 작업 조금 함, [femiwiki/backupbot]으로 백업 자동화함, RESTBase 작업함, 로컬 개발 편하게 바꿈(https://github.com/femiwiki/mediawiki/commit/b45986e), 카산드라 작업 시작함, [스킨 repo 갈아엎기 시작함](https://github.com/femiwiki/FemiwikiSkin/issues/64)
+
+## 2018-12
+
+- **[2019-12-22+0900]** 도쿄에서 t3.micro/t3.nano 인스턴스로 타입 변경, Packer로 페미위키 AMI 만듦
+- **[2019-12-15+0900]** 사이트 배포방식 docker기반으로 변경
+
+## 2018-11
+
+- 이 사이에도 뭔가 많이 함
+
+## 2018-10
+
+- **[2019-10-25+0900]** Parsoid 0.5.3에서 0.9.0으로 업그레이드(https://github.com/femiwiki/parsoid/issues/7)
+- **[2019-10-07+0900]** [Extension:AWS](https://www.mediawiki.org/wiki/Extension:AWS)으로 이미지 등 파일 저장소로 AWS S3사용
+
+## 2018-09
+
+- **2018-09-21+0900 - 2018-09-24+0900** 많은 서비스들 도커화함, 미디어위키 버전 1.27에서 1.31 업그레이드됨(https://github.com/femiwiki/femiwiki/issues/21), 로드 밸런서 도입
+- **2018-09-14+0900 - 2018-09-16+0900** AWS EC2 리전을 서울(ap-northeast-2)에서 도쿄(ap-northeast-1)로 이전함, 서버비가 76.58 USD/month -> 60.43 USD/month로 감소
 
 [페미위키]: https://femiwiki.com
+[femiwiki/backupbot]: https://github.com/femiwiki/backupbot
+[femiwiki/base]: https://github.com/femiwiki/base
+[femiwiki/base-extension]: https://github.com/femiwiki/base-extension
