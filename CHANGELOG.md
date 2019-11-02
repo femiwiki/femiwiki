@@ -4,6 +4,7 @@
 
 ## 2019-11
 
+- **[2019-11-02T14:43+0900]** mediawiki 인스턴스와 database+bots 인스턴스에 yum-cron 설치(https://github.com/femiwiki/femiwiki/issues/111)
 - **[2019-11-02T11:30+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 `srv/femiwiki.com/extensions/DiscordNotifications/i18n`에 https://github.com/femiwiki/DiscordNotifications/blob/1160023/i18n/ko.json 다운로드함.
 - **[2019-11-02T05:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-20](https://github.com/femiwiki/mediawiki/releases/tag/build-20)로 교체하면서 femiwiki_files 볼륨도 재생성함.
   <details>정기 배포</details>
