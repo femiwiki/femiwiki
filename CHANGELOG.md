@@ -4,6 +4,11 @@
 
 ## 2019-11
 
+- **[2019-11-08T22:00+0900 ~ 2019-11-09T01:00+0900]**
+  - https://github.com/femiwiki/infra/compare/8a2c9c6..a3fcf3d
+    - 로드 밸런서 삭제 및 관련 자원 삭제/변경
+    - `aws_instance.mediawiki` 인스턴스 타입 t3에서 t3a로 변경
+  - `mediawiki_fastcgi` 콘테이너의 도커 이미지 [`femiwiki/mediawiki:build-21`](https://github.com/femiwiki/mediawiki/releases/tag/build-21)로 교체(정기 배포)
 - **[2019-11-02T15:00+0900]** mediawiki 인스턴스와 database+bots 인스턴스에 yum-cron 설치 `sudo sed -i "s/update_cmd = default/update_cmd = security/" /etc/yum/yum-cron-hourly.conf && sudo sed -i "s/update_cmd = default/update_cmd = security/" /etc/yum/yum-cron.conf` 실행
   <details>https://github.com/femiwiki/femiwiki/issues/111</details>
 - **[2019-11-02T11:30+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 `srv/femiwiki.com/extensions/DiscordNotifications/i18n`에 https://github.com/femiwiki/DiscordNotifications/blob/1160023/i18n/ko.json 다운로드함.
