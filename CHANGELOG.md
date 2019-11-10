@@ -4,6 +4,7 @@
 
 ## 2019-11
 
+- **[2019-11-10T16:43+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/9eb7446)
 - **[2019-11-10T16:20+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/fe45a1d)
 - **[2019-11-08T22:00+0900 ~ 2019-11-09T01:00+0900]**
   - https://github.com/femiwiki/infra/compare/8a2c9c6..a3fcf3d
