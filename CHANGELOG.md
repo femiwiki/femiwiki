@@ -4,6 +4,9 @@
 
 ## 2019-11
 
+
+- **[2019-11-16T15:25+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/docker-mediawiki/commit/10bd12b)
+- **[2019-11-16T05:00+0900]** 인스턴스 교체(https://github.com/femiwiki/femiwiki/issues/117) 및 `mediawiki_fastcgi` 콘테이너의 도커 이미지 [`femiwiki/mediawiki:build-22`](https://github.com/femiwiki/mediawiki/releases/tag/build-22)로 교체(정기 배포)
 - **[2019-11-11T17:16+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/secret.php` 파일에 다음 추가<pre>$wgRateLimits['mailpassword']['ip'] = [ 8, 10 ];
 $wgRateLimits['emailuser']['ip'] = [ 5, 60 ];</pre>
 - **[2019-11-10T16:43+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/9eb7446)
