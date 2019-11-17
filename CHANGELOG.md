@@ -4,13 +4,14 @@
 
 ## 2019-11
 
-
-- **[2019-11-16T15:25+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/docker-mediawiki/commit/10bd12b)
+- **[2019-11-17T07:00+0900]** 교체되면서 안 쓰이게 된 인스턴스 및 자원들 삭제(https://github.com/femiwiki/femiwiki/issues/117)
+- **[2019-11-16T15:25+0900]** `aws_instance.mediawiki`의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/docker-mediawiki/commit/10bd12b)
 - **[2019-11-16T05:00+0900]** 인스턴스 교체(https://github.com/femiwiki/femiwiki/issues/117) 및 `mediawiki_fastcgi` 콘테이너의 도커 이미지 [`femiwiki/mediawiki:build-22`](https://github.com/femiwiki/mediawiki/releases/tag/build-22)로 교체(정기 배포)
-- **[2019-11-11T17:16+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/secret.php` 파일에 다음 추가<pre>$wgRateLimits['mailpassword']['ip'] = [ 8, 10 ];
+- **[2019-11-15T16:00+0900]** `aws_instance.femiwiki` 런치 및 관련 자원 생성
+- **[2019-11-11T17:16+0900]** `aws_instance.mediawiki`의 `/home/ec2-user/configs/mediawiki/secret.php` 파일에 다음 추가<pre>$wgRateLimits['mailpassword']['ip'] = [ 8, 10 ];
 $wgRateLimits['emailuser']['ip'] = [ 5, 60 ];</pre>
-- **[2019-11-10T16:43+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/9eb7446)
-- **[2019-11-10T16:20+0900]** aws_instance.mediawiki의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/fe45a1d)
+- **[2019-11-10T16:43+0900]** `aws_instance.mediawiki`의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/9eb7446)
+- **[2019-11-10T16:20+0900]** `aws_instance.mediawiki`의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/mediawiki/commit/fe45a1d)
 - **[2019-11-08T22:00+0900 ~ 2019-11-09T01:00+0900]**
   - https://github.com/femiwiki/infra/compare/8a2c9c6..a3fcf3d
     - 로드 밸런서 삭제 및 관련 자원 삭제/변경
