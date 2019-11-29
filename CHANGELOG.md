@@ -4,6 +4,7 @@
 
 ## 2019-11
 
+- **[2019-11-23T16:30+0900]** `aws_instance.mediawiki`의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/docker-mediawiki/commit/a34cb2f)
 - **[2019-11-30T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-24`](https://github.com/femiwiki/mediawiki/releases/tag/build-24)로 교체(정기 배포)
 - **[2019-11-23T16:30+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너에서 https://github.com/femiwiki/DiscordNotifications/commit/9e56691 적용<details>https://github.com/femiwiki/docker-mediawiki/issues/320</details>
 - **[2019-11-23T05:50+0900]** `aws_instance.mediawiki`에서 `sudo yum install ec2-instance-connect` 실행
