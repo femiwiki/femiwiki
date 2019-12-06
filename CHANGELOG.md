@@ -2,6 +2,10 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2019-12
+
+- **[2019-12-07T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-25`](https://github.com/femiwiki/mediawiki/releases/tag/build-25)로 교체(정기 배포)
+
 ## 2019-11
 
 - **[2019-11-23T16:30+0900]** `aws_instance.mediawiki`의 `/home/ec2-user/configs/mediawiki/LocalSettings.php` 파일 수정(https://github.com/femiwiki/docker-mediawiki/commit/a34cb2f)
