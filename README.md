@@ -37,7 +37,8 @@
 주로 작업하는 소스코드들은 아래 링크로 확인하실 수 있으십니다.
 
 - [페미위키 테라폼](https://github.com/femiwiki/infra)
-- [도커 컴포즈 목록](https://github.com/femiwiki?q=docker-compose+server)
+- [페미위키 Kubernetes](https://github.com/femiwiki/kubernetes)
+- [도커 컴포즈 목록](https://github.com/femiwiki?q=docker-compose+server) (퇴역 예정)
 - [도커 이미지 목록](https://github.com/femiwiki?q=docker-image)
 - [페미위키 서버 AMI](https://github.com/femiwiki/ami)
 - 미디어위키 플러그인
