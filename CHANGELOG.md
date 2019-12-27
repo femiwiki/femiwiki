@@ -4,10 +4,11 @@
 
 ## 2019-12
 
-- **[2019-12-21T23:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-28`](https://github.com/femiwiki/mediawiki/releases/tag/build-28)로 교체(정기 배포)
-- **[2019-12-21T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-27`](https://github.com/femiwiki/mediawiki/releases/tag/build-27)로 교체(정기 배포)
-- **[2019-12-14T05:16+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-26`](https://github.com/femiwiki/mediawiki/releases/tag/build-26)로 교체(정기 배포)
-- **[2019-12-07T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-25`](https://github.com/femiwiki/mediawiki/releases/tag/build-25)로 교체(정기 배포)
+- **[2019-11-23T01:30+0900]** `aws_instance.mediawiki`의 `mediawiki_files` 볼륨에 https://github.com/femiwiki/FemiwikiSkin/commit/0b21782 적용
+- **[2019-12-21T23:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-28`](https://github.com/femiwiki/mediawiki/releases/tag/build-28)로 교체하며 `mediawiki_files` 볼륨 재생성(정기 배포)
+- **[2019-12-21T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-27`](https://github.com/femiwiki/mediawiki/releases/tag/build-27)로 교체하며 `mediawiki_files` 볼륨 재생성(정기 배포)
+- **[2019-12-14T05:16+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-26`](https://github.com/femiwiki/mediawiki/releases/tag/build-26)로 교체하며 `mediawiki_files` 볼륨 재생성(정기 배포)
+- **[2019-12-07T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-25`](https://github.com/femiwiki/mediawiki/releases/tag/build-25)로 교체하며 `mediawiki_files` 볼륨 재생성(정기 배포)
 
 ## 2019-11
 
