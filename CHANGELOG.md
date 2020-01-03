@@ -4,7 +4,8 @@
 
 ## 2020-01
 
-- **[2020-01-04T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-29`](https://github.com/femiwiki/mediawiki/releases/tag/build-29)로 교체하며 `mediawiki_files` 볼륨 재생성(정기 배포)
+- **[2020-01-04T05:10+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-29`](https://github.com/femiwiki/mediawiki/releases/tag/build-29)로 교체하며 `mediawiki_files` 볼륨 재생성하였으나 [https://github.com/femiwiki/docker-mediawiki/issues/337](https://github.com/femiwiki/docker-mediawiki/issues/337)로 인해 다시 build-28를 사용함
+- **[2020-01-04T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-29`](https://github.com/femiwiki/mediawiki/releases/tag/build-29)로 교체하며 `mediawiki_files` 볼륨 재생성하려 했으나 build-28을 사용함
 
 ## 2019-12
 
