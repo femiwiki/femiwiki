@@ -4,6 +4,7 @@
 
 ## 2020-01
 
+- **[2020-01-18T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-31`](https://github.com/femiwiki/mediawiki/releases/tag/build-31)로 교체하며 `mediawiki_files` 볼륨 재생성
 - **[2020-01-13T05:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/compare/e966d7c..d3e0e77
 - **[2020-01-08T05:00+0900]** `aws_instance.mediawiki`에서 `~/mediawiki/configs/secret.php` 파일 수정(https://github.com/femiwiki/femiwiki/issues/151#issuecomment-571761987)
 - **[2020-01-08T05:00+0900]** `aws_instance.mediawiki`에서 `sudo touch /srv/restbase.sqlite3` 실행
