@@ -39,11 +39,11 @@
 - [페미위키 테라폼](https://github.com/femiwiki/infra)
 - [페미위키 Kubernetes](https://github.com/femiwiki/kubernetes)
 - [도커 컴포즈 목록](https://github.com/femiwiki?q=docker-compose+server) (퇴역 예정)
-- [도커 이미지 목록](https://github.com/femiwiki?q=docker-image)
+- [도커 이미지 목록](https://github.com/femiwiki?q=docker-image+archived%3Ano)
 - [페미위키 서버 AMI](https://github.com/femiwiki/ami)
 - 미디어위키 플러그인
   - [FemiwikiSkin]
-  - [그 외 자체 개발 확장 기능들](https://github.com/femiwiki?q=mediawiki-extension)
+  - [그 외 자체 개발 확장 기능들](https://github.com/femiwiki?q=mediawiki-extension+fork%3Ano)
 
 &nbsp;
 
