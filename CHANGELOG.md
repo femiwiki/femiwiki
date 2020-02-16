@@ -2,12 +2,15 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
-## 2020-01
+## 2020-02
 
 - **[2020-02-17T04:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/a6d3f39
 - **[2020-02-16T17+0900]** https://github.com/femiwiki/femiwiki/issues/166#issuecomment-586682946 진행
 - **[2020-02-16T14:30+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/a6d3f39
 - **[2020-02-16T14:30+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/67d0963 및 `/srv/tweetbot` 디렉토리 삭제
+
+## 2020-01
+
 - **[2020-01-27T12:35+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/110330c
 - **[2020-01-18T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:build-31`](https://github.com/femiwiki/mediawiki/releases/tag/build-31)로 교체하며 `mediawiki_files` 볼륨 재생성
 - **[2020-01-13T05:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/compare/e966d7c..d3e0e77
