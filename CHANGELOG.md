@@ -4,6 +4,7 @@
 
 ## 2020-01
 
+- **[2020-02-17T04:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/a6d3f39
 - **[2020-02-16T17+0900]** https://github.com/femiwiki/femiwiki/issues/166#issuecomment-586682946 진행
 - **[2020-02-16T14:30+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/a6d3f39
 - **[2020-02-16T14:30+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/67d0963 및 `/srv/tweetbot` 디렉토리 삭제
