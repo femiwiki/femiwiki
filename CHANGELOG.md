@@ -4,6 +4,7 @@
 
 ## 2020-02
 
+- **[2020-02-19T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:202002181527326c87e3`](https://hub.docker.com/layers/femiwiki/mediawiki/202002181527326c87e3/images/sha256-5d8d10ac063076fd9d4a5fad9854e9c53d89a45ba6cbb679a4e27319c22506a2)로 교체
 - **[2020-02-18T09:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/pull/348 진행
 - **[2020-02-17T04:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/a6d3f39 적용함
 - **[2020-02-16T17+0900]** https://github.com/femiwiki/femiwiki/issues/166#issuecomment-586682946 진행
