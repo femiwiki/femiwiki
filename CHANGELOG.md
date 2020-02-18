@@ -4,7 +4,7 @@
 
 ## 2020-02
 
-- **[2020-02-17T09:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/pull/348 진행
+- **[2020-02-18T09:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/pull/348 진행
 - **[2020-02-17T04:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/a6d3f39 적용함
 - **[2020-02-16T17+0900]** https://github.com/femiwiki/femiwiki/issues/166#issuecomment-586682946 진행
 - **[2020-02-16T14:30+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/commit/a6d3f39 가져옴
