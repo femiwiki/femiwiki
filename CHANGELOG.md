@@ -2,10 +2,15 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
-## 2020-02
+## 2020-03
 
+- **[2020-03-28T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-03-27T13-48d5c3bd9a
+`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-03-27T13-48d5c3bd9a/images/sha256-298d2fdf7fbe8d63513f96f393271852cb18dccc51983877ffbcd9b0aac3148e?context=explore)로 교체
 - **[2020-03-24T06:30+0900]** [`aws_instance.mediawiki`에 `mediawiki_fastcgi` 콘테이너 인스턴스 타입을 t3a.micro에서 t3a.small로 변경](https://github.com/femiwiki/femiwiki/issues/188)
 - **[2020-03-14T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:202003112320210c8870`](https://hub.docker.com/layers/femiwiki/mediawiki/202003112320210c8870/images/sha256-5f876934a3a29a94de82007c6271480032f7c8789d0ecf8da08f966c9d1a3a9a)로 교체
+
+## 2020-02
+
 - **[2020-02-29T06:30+0900]** `aws_instance.mediawiki`에 https://github.com/femiwiki/docker-mediawiki/commit/39aae54 적용
 - **[2020-02-19T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:202002181527326c87e3`](https://hub.docker.com/layers/femiwiki/mediawiki/202002181527326c87e3/images/sha256-5d8d10ac063076fd9d4a5fad9854e9c53d89a45ba6cbb679a4e27319c22506a2)로 교체
 - **[2020-02-18T09:00+0900]** `aws_instance.mediawiki`에서 https://github.com/femiwiki/docker-mediawiki/pull/348 진행
