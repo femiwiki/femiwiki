@@ -2,6 +2,12 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2020-06
+
+- **[2020-06-13T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-06-12T12-30-2502991c`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-06-12T12-30-2502991c/images/sha256-9bd8295af9d096241561ea9e2d01ab53a4efd24f5c4a8b562b132c8446c8f7ad?context=explore)로 교체
+- **[2020-06-06T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-06-05T20-07-eb655a0a`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-06-05T20-07-eb655a0a/images/sha256-3bde36fd58656b7e26397b40ba25dcfcf0cc93a88cecd377995492769a038bc3?context=explore)로 교체
+
+
 ## 2020-03
 
 - **[2020-03-28T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-03-27T13-48d5c3bd9a
