@@ -1,0 +1,9 @@
+{
+  "name": "Extension release helper",
+  "description": "Upload Release Asset and submit a PR to docker-mediawiki repository.",
+  "iconName": "OOjs_UI_icon_advanced",
+  "filePatterns": [
+      "^extension.json$",
+      "^skin.json$"
+  ]
+}
