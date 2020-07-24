@@ -4,6 +4,7 @@
 
 ## 2020-07
 
+- **[2020-07-25T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-07-24T03-46-9ba51ae0`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-07-24T03-46-9ba51ae0/images/sha256-497689287922b559d75e9ac49b13266eabc10002e99ca8899c9123b57aabac58?context=explore)로 교체
 - **[2020-07-19T10:30+0900]** `aws_instance.mediawiki`의 `mediawiki_files` 볼륨에 https://github.com/femiwiki/FemiwikiSkin/commit/c844c12b 적용함
 - **[2020-07-18T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-07-17T13-00-5dc0cef3`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-07-17T13-00-5dc0cef3/images/sha256-64eb2d12eaf183ed56938e1c8928277ac297ec4afb41970b692ea512a9ef82e2?context=explore)로 교체
 - **[2020-07-11T05:10+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-07-10T05-17-d2ccb6d8`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-07-10T05-17-d2ccb6d8/images/sha256-f6e335de2c1932cc4cfd999bbfee00f4f4bdb1ee31a833433967711a8eea9d13?context=explore)로 교체
