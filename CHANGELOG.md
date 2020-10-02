@@ -2,6 +2,12 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2020-10
+
+- **[2020-10-03T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`ghcr.io/femiwiki/mediawiki:2020-09-27T13-13-c4294561`](https://github.com/orgs/femiwiki/packages/container/mediawiki/83551)로 교체 등
+  - Docker Hub 대신 GitHub Container Registry 사용(https://github.com/femiwiki/femiwiki/issues/97)
+  - 미디어위키 1.35 업그레이드(https://github.com/femiwiki/femiwiki/issues/141)
+
 ## 2020-08
 
 - **[2020-08-08T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-08-07T12-21-36a5ea12`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-08-07T12-21-36a5ea12/images/sha256-fc203fa80f06af25fcc6ca3f83ed3c5f4eae5a839d1c4bb8f94cb790c9e7622c?context=explore)로 교체
