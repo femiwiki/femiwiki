@@ -36,7 +36,10 @@
    # Prune docker system
    # See https://github.com/femiwiki/femiwiki/issues/70#issuecomment-482030123
    docker system prune -fa --volumes
+   # See status
+   # watch docker service ls
    ```
+10. Update [CHANGELOG.md].
 
 ## Nomad
 
@@ -47,3 +50,4 @@ TBD. FemiWiki is not deployed by Nomad yet. (https://github.com/femiwiki/femiwik
 [github workflow page]: https://github.com/femiwiki/docker-mediawiki/actions
 [github packages page]: https://github.com/orgs/femiwiki/packages/container/package/mediawiki
 [production.yml]: https://github.com/femiwiki/docker-mediawiki/blob/master/production.yml
+[changelog.md]: https://github.com/femiwiki/femiwiki/blob/master/CHANGELOG.md
