@@ -17,7 +17,7 @@
 3. Bump the extensions on [femiwiki/docker-mediawiki] repository. ([commit example](https://github.com/femiwiki/docker-mediawiki/commit/01ff89a7))
 4. Wait for a new docker image to be built. You can see the progress of the building process in the [Github workflow page].
 5. After building, copy a new latest docker image's tag from the [Github packages page].
-6. Edit production.yml file and commit. ([commit example](https://github.com/femiwiki/docker-mediawiki/commit/68994922))
+6. Edit [production.yml] file and commit. ([commit example](https://github.com/femiwiki/docker-mediawiki/commit/68994922))
 7. Make sure that our database backup is stored well.
 8. Connect our AWS EC2 instance.
 9. Execute:
@@ -46,3 +46,4 @@ TBD. FemiWiki is not deployed by Nomad yet. (https://github.com/femiwiki/femiwik
 [femiwiki/docker-mediawiki]: https://github.com/femiwiki/docker-mediawiki
 [github workflow page]: https://github.com/femiwiki/docker-mediawiki/actions
 [github packages page]: https://github.com/orgs/femiwiki/packages/container/package/mediawiki
+[production.yml]: https://github.com/femiwiki/docker-mediawiki/blob/master/production.yml
