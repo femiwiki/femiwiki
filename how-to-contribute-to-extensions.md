@@ -17,7 +17,7 @@ The [compatibility policy] of FemiWiki extensions/skin is "release branches", th
     # Commit the changes.
     git commit -m "Release ${VERSION}"
     # Tag the commit with message
-    git tag v1.x.x -m "${NAME} release"
+    git tag "${VERSION}" -m "${NAME} release"
     # Push the commit and the tag
     git push --follow-tags
    ```
