@@ -4,6 +4,7 @@
 
 ## 2020-12
 
+- **[2020-12-27T23:34+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2020-12-27t14-06-7425b5b7](https://github.com/orgs/femiwiki/packages/container/mediawiki/648542)로 교체
 - **[2020-12-27T23:28+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 대상으로 `docker kill` 실행 후 완화됨.
 - **[2020-12-27T21:00+0900]** 서버 장애 발생 (추정 시각)
 - **[2020-12-26T05:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2020-12-25t03-18-a471f194](https://github.com/orgs/femiwiki/packages/container/mediawiki/633983)로 교체 후 LocalSettings.php를 고치는 [d01bd1f](https://github.com/femiwiki/docker-mediawiki/commit/d01bd1f48bac578106c3265e73f449b106f4a1dd) 커밋 적용
