@@ -2,6 +2,11 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2021-01
+
+- **[2020-01-02T05:45+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-01T20-36-1e8d9b39](https://github.com/orgs/femiwiki/packages/container/mediawiki/682784)로 교체
+- **[2020-01-02T05:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-01t03-59-f71bc7ff](https://github.com/orgs/femiwiki/packages/container/mediawiki/685721)로 교체
+
 ## 2020-12
 
 - **[2020-12-27T18:57+0900]** `aws_instance.mediawiki`의 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [27t14-06-7425b5b7](https://github.com/orgs/femiwiki/packages/container/mediawiki/669463)로 교체
