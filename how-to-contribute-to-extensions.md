@@ -14,12 +14,13 @@ The [compatibility policy] of FemiWiki extensions/skin is "release branches", th
     NAME=OurExtension
     # NAME=$(basename $(pwd))
     VERSION=vx.x.x
+    # VERSION=$(python -c 'import sys,json; print(json.loads(sys.stdin.read())["version"])' < extension.json)
     # Commit the changes.
     git commit -m "Release ${VERSION}"
     # Tag the commit with message
     git tag "${VERSION}" -m "${NAME} release"
     # Push the commit and the tag
-    git push --follow-tags
+    git push origin --follow-tags
    ```
 5. (optional) Copy changelog from the file to the release page.
 
