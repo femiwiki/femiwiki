@@ -14,7 +14,7 @@ The [compatibility policy] of FemiWiki extensions/skin is "release branches", th
     NAME=OurExtension
     # NAME=$(basename $(pwd))
     VERSION=vx.x.x
-    # VERSION=$(python -c 'import sys,json; print(json.loads(sys.stdin.read())["version"])' < extension.json)
+    # VERSION="v$(python -c 'import sys,json; print(json.loads(sys.stdin.read())["version"])' < extension.json)"
     # Commit the changes.
     git commit -m "Release ${VERSION}"
     # Tag the commit with message
