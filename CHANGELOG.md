@@ -4,6 +4,7 @@
 
 ## 2021-01
 
+- **[2020-01-03T18:05+0900]** `aws_instance.mediawiki`의 `bots_backupbot` 콘테이너 도커 이미지 `ghcr.io/femiwiki/backupbot`의 태그를 [2021-01-03T07-30-0c08a25a](https://github.com/orgs/femiwiki/packages/container/backupbot/693921)로 교체
 - **[2020-01-02T05:45+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-01T20-36-1e8d9b39](https://github.com/orgs/femiwiki/packages/container/mediawiki/682784)로 교체
 - **[2020-01-02T05:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-01t03-59-f71bc7ff](https://github.com/orgs/femiwiki/packages/container/mediawiki/685721)로 교체
 
