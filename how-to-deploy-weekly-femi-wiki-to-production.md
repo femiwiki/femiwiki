@@ -45,9 +45,9 @@
 
 TBD. FemiWiki is not deployed by Nomad yet. (https://github.com/femiwiki/femiwiki/issues/116)
 
-[how-to-contribute-to-extensions.md#release]: https://github.com/femiwiki/femiwiki/blob/master/how-to-contribute-to-extensions.md#release
+[how-to-contribute-to-extensions.md#release]: https://github.com/femiwiki/femiwiki/blob/main/how-to-contribute-to-extensions.md#release
 [femiwiki/docker-mediawiki]: https://github.com/femiwiki/docker-mediawiki
 [github workflow page]: https://github.com/femiwiki/docker-mediawiki/actions
 [github packages page]: https://github.com/orgs/femiwiki/packages/container/package/mediawiki
 [production.yml]: https://github.com/femiwiki/docker-mediawiki/blob/master/production.yml
-[changelog.md]: https://github.com/femiwiki/femiwiki/blob/master/CHANGELOG.md
+[changelog.md]: https://github.com/femiwiki/femiwiki/blob/main/CHANGELOG.md
