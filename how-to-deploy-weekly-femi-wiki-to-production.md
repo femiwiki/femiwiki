@@ -26,7 +26,7 @@
    # Go to owr mediawiki clone directory
    cd mediawiki
    # Checkout the latest master branch.
-   git checkout master && git pull
+   git checkout main && git pull
 
    # If needed
    # docker stack rm mediawiki
@@ -36,6 +36,8 @@
    # Prune docker system
    # See https://github.com/femiwiki/femiwiki/issues/70#issuecomment-482030123
    docker system prune -fa --volumes
+   # during docker v18
+   sudo  prlimit -n40960 -p $(pidof caddy)
    # See status
    # watch docker service ls
    ```
