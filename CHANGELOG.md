@@ -2,6 +2,10 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2021-03
+- **[2020-03-27T07:28+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-03-21t09-12-c32a248f
+](https://github.com/orgs/femiwiki/packages/container/mediawiki/1611726)로 교체
+
 ## 2021-02
 - **[2020-02-07T15:55+0900]** `aws_instance.mediawiki`에 cloudwatch-agent 설치([6e8b79d](https://github.com/femiwiki/infra/commit/6e8b79dc1325b9e12c92596d7ecfbf9fe13e6049))
 - **[2020-02-07T14:39+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-02-07t05-23-fa985a7e](https://github.com/orgs/femiwiki/packages/container/mediawiki/1050120)로 교체
