@@ -7,7 +7,7 @@
 있습니다.
 
 - [각종 소스코드](https://github.com/femiwiki/)
-- [페미위키 디스코드 #개발 채널](https://discord.gg/yrQCFQt)
+- [페미위키 디스코드 #개발 채널](https://discord.gg/umzYjJcbvH)
 - [페미위키 이슈 트래커](https://github.com/femiwiki/femiwiki/issues)
 - [페미위키 개발팀 칸반 보드](https://github.com/orgs/femiwiki/projects/1)
 - [페미위키 개발팀 주별/분기별 목표](https://github.com/femiwiki/femiwiki/milestones)
