@@ -4,11 +4,35 @@
 
 - [미디어위키의 Coding Conventions]을 따르며 [mediawiki/mediawiki-codesniffer] 검사에 오류가 없으면 문제가 없는 것으로 합니다.
 
-## JavaScript
+## JavaScript / JSON
 
 - [Prettier]를 적용합니다.
 
+## CSS / LESS / SCSS
+
+- [Prettier]를 적용합니다.
+
+## XML
+
+- [Prettier]를 적용합니다.
+
+## Markdown
+
+- 미정
+
 ## Python
+
+- 미정
+
+## Rust
+
+- 미정
+
+## Golang
+
+- 미정
+
+## Mustache
 
 - 미정
 
