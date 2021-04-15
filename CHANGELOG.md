@@ -2,11 +2,22 @@
 
 [페미위키]와 관련되어 있지만 소스코드 외의 내용이라 추적이 어려운 변경 사항에 대한 기록으로, 시간 표기는 대략적인 것입니다.
 
+## 2021-04
+
+시행착오와 함께 Docker Swarm을 Nomad로 교체 계속 진행, Nomad를 Terraform으로 관리하여 CD 적용됨(https://github.com/femiwiki/femiwiki/issues/4). CPU 사용을 낮추기 위해 익명 요청을 캐시하는 Caddy plugin([caddy-mwcache](https://github.com/femiwiki/caddy-wmcache))를 개발 및 적용함. 데이터베이스나 일부 보존이 필요한 데이터들을 별도 EBS로 이동(https://github.com/femiwiki/femiwiki/issues/110). X-Forwarded-For을 추가할 프록시가 없어 미디어위키가 사용자 IP 관련 처리를 못하는 것이 호스트 네트워크 사용으로 해소되었으나 의도한 바는 아님(https://github.com/femiwiki/docker-mediawiki/issues/309).
+
+- **[2020-04-14+0900]** 메모리가 과다하게 사용되어 caddy-mwcache의 백엔드를 BadgerDB에서 Ristretto로 교체
+- **[2020-04-13+0900]** caddy-mwcache를 적용하여 Docker Swarm 인스턴스에서 Nomad로 교체 재진행
+- **[2020-04-09+0900]** CPU 사용이 많아 Nomad 인스턴스에서 Docker Swarm 인스턴스로 회귀
+
 ## 2021-03
+
+- **[2020-03-31T07:28+0900]** 인스턴스 둘을 이용해 블루-그린 형식으로 Docker Swarm을 Nomad로 대체 시작(https://github.com/femiwiki/femiwiki/issues/116)
 - **[2020-03-27T07:28+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-03-21t09-12-c32a248f
-](https://github.com/orgs/femiwiki/packages/container/mediawiki/1611726)로 교체
+  ](https://github.com/orgs/femiwiki/packages/container/mediawiki/1611726)로 교체
 
 ## 2021-02
+
 - **[2020-02-07T15:55+0900]** `aws_instance.mediawiki`에 cloudwatch-agent 설치([6e8b79d](https://github.com/femiwiki/infra/commit/6e8b79dc1325b9e12c92596d7ecfbf9fe13e6049))
 - **[2020-02-07T14:39+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-02-07t05-23-fa985a7e](https://github.com/orgs/femiwiki/packages/container/mediawiki/1050120)로 교체
 - **[2020-02-06T10:40+0900]** `aws_instance.mediawiki` 디스크 풀로 인한 장애 발생
@@ -57,11 +68,9 @@
 - **[2020-06-13T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-06-12T12-30-2502991c`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-06-12T12-30-2502991c/images/sha256-9bd8295af9d096241561ea9e2d01ab53a4efd24f5c4a8b562b132c8446c8f7ad?context=explore)로 교체
 - **[2020-06-06T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-06-05T20-07-eb655a0a`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-06-05T20-07-eb655a0a/images/sha256-3bde36fd58656b7e26397b40ba25dcfcf0cc93a88cecd377995492769a038bc3?context=explore)로 교체
 
-
 ## 2020-03
 
-- **[2020-03-28T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-03-27T13-48d5c3bd9a
-`](https://hub.docker.com/layers/femiwiki/mediawiki/2020-03-27T13-48d5c3bd9a/images/sha256-298d2fdf7fbe8d63513f96f393271852cb18dccc51983877ffbcd9b0aac3148e?context=explore)로 교체
+- **[2020-03-28T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:2020-03-27T13-48d5c3bd9a `](https://hub.docker.com/layers/femiwiki/mediawiki/2020-03-27T13-48d5c3bd9a/images/sha256-298d2fdf7fbe8d63513f96f393271852cb18dccc51983877ffbcd9b0aac3148e?context=explore)로 교체
 - **[2020-03-24T06:30+0900]** [`aws_instance.mediawiki`에 `mediawiki_fastcgi` 콘테이너 인스턴스 타입을 t3a.micro에서 t3a.small로 변경](https://github.com/femiwiki/femiwiki/issues/188)
 - **[2020-03-14T05:00+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너 도커 이미지를 [`femiwiki/mediawiki:202003112320210c8870`](https://hub.docker.com/layers/femiwiki/mediawiki/202003112320210c8870/images/sha256-5f876934a3a29a94de82007c6271480032f7c8789d0ecf8da08f966c9d1a3a9a)로 교체
 
@@ -204,10 +213,12 @@ $wgRateLimits['emailuser']['ip'] = [ 5, 60 ];</pre>
 
   S3의 femiwiki-backups 버킷에 저장되는 데이터가 데이터베이스 백업뿐 아니라 그 외 여러가지가 되어, 데이터베이스 백업은 `/mysql/`에 저장하고 그 외 파일은 잠정적으로 루트 경로에 보관하기로 함.
   </details>
+
 - **[2019-04-14+0900]** 개발팀에 신규 멤버 3명 참여함
 - **[2019-04-13T06:00+0900]** mediawiki 인스턴스의 femiwiki_mediawiki 콘테이너 이미지를 [build-7](https://github.com/femiwiki/mediawiki/releases/tag/build-7)로 교체하면서 femiwiki_files 볼륨도 재생성함.
 
   <details>정기 배포. UnifiedExtensionForFemiwiki 확장기능 업데이트.</details>
+
 - **[2019-04-11T17:30+0900]** mediawiki 인스턴스에서 사용되지 않는 도커 이미지 삭제함.
   <details>일부 문서가 표시되지 않고 자바스크립트가 작동하지 않아 원인 파악 중 [하드디스크 문제](https://github.com/femiwiki/femiwiki/issues/70#issuecomment-482030123)로 밝혀져 조치함.</details>
 
@@ -243,7 +254,7 @@ $wgRateLimits['emailuser']['ip'] = [ 5, 60 ];</pre>
     - database+bots 인스턴스에서 femiwiki/restbase:build-0 도커 컨테이너 삭제.
     - mediawiki 인스턴스에서 mediawiki 스택 재생성(femiwiki/restbase:build-1 도커 컨테이너 추가됨). 하드디스크 용량 문제로 정상 실행에 실패함.
     - database+bots 인스턴스에서 femiwiki/cassandra:build-0 도커 컨테이너 실행.
-  <details>정기배포 및 RESTBase가 실행되는 장소(서버)를 옮기고 데이터베이스를 SQLite(기본값)에서 카산드라로 교체함.</details>
+    <details>정기배포 및 RESTBase가 실행되는 장소(서버)를 옮기고 데이터베이스를 SQLite(기본값)에서 카산드라로 교체함.</details>
 - **[2019-02-02+0900]** 노동톤 주요성과로 [femiwiki/base] 이미지와 [femiwiki/base-extension] 이미지를 통해 도커 빌드시간 최적화함, [파소이드 버전업](https://github.com/femiwiki/femiwiki/issues/45), Continuous Delivery 작업 조금 함, [femiwiki/backupbot]으로 백업 자동화함, RESTBase 작업함, 로컬 개발 편하게 바꿈(https://github.com/femiwiki/mediawiki/commit/b45986e), 카산드라 작업 시작함, [스킨 repo 갈아엎기 시작함](https://github.com/femiwiki/FemiwikiSkin/issues/64)
 
 ## 2018-12
