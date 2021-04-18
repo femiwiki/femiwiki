@@ -24,6 +24,14 @@
 
 - 미정
 
+## Terraform
+
+- [terraform fmt] 적용
+
+## HCL
+
+- [hclfmt] 적용
+
 ## Rust
 
 - 미정
@@ -47,3 +55,5 @@
 [미디어위키의 Coding Conventions]: https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Coding_conventions
 [prettier]: https://prettier.io/
 [mediawiki/mediawiki-codesniffer]: https://packagist.org/packages/mediawiki/mediawiki-codesniffer
+[terraform fmt]: https://www.terraform.io/docs/cli/commands/fmt.html
+[hclfmt]: https://pkg.go.dev/github.com/hashicorp/hcl/v2/cmd/hclfmt
