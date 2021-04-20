@@ -4,10 +4,11 @@
 
 ## 2021-04
 
-시행착오와 함께 Docker Swarm을 Nomad로 교체 계속 진행, Nomad를 Terraform으로 관리하여 CD 적용됨(https://github.com/femiwiki/femiwiki/issues/4). CPU 사용을 낮추기 위해 익명 요청을 캐시하는 Caddy plugin([caddy-mwcache](https://github.com/femiwiki/caddy-wmcache))를 개발 및 적용함. 데이터베이스나 일부 보존이 필요한 데이터들을 별도 EBS로 이동(https://github.com/femiwiki/femiwiki/issues/110). X-Forwarded-For을 추가할 프록시가 없어 미디어위키가 사용자 IP 관련 처리를 못하는 것이 호스트 네트워크 사용으로 해소되었으나 의도한 바는 아님(https://github.com/femiwiki/docker-mediawiki/issues/309).
+시행착오와 함께 Docker Swarm을 Nomad로 교체, Nomad를 Terraform으로 관리하여 CD 적용됨(https://github.com/femiwiki/femiwiki/issues/4). CPU 사용을 낮추기 위해 익명 요청을 캐시하는 Caddy plugin([caddy-mwcache](https://github.com/femiwiki/caddy-wmcache))를 개발 및 적용함. 데이터베이스나 일부 보존이 필요한 데이터들을 별도 EBS로 이동(https://github.com/femiwiki/femiwiki/issues/110). X-Forwarded-For을 추가할 프록시가 없어 미디어위키가 사용자 IP 관련 처리를 못하는 것이 호스트 네트워크 사용으로 해소되었으나 의도한 바는 아님(https://github.com/femiwiki/docker-mediawiki/issues/309).
 
-- **[2020-04-14+0900]** 메모리가 과다하게 사용되어 caddy-mwcache의 백엔드를 BadgerDB에서 Ristretto로 교체
-- **[2020-04-13+0900]** caddy-mwcache를 적용하여 Docker Swarm 인스턴스에서 Nomad로 교체 재진행
+- **[2020-04-20T17:00+0900]** Docker Swarm을 사용하던 인스턴스 삭제하고 EBS만 스냅샷으로 보존
+- **[2020-04-14T16:00+0900]** 메모리가 과다하게 사용되어 caddy-mwcache의 백엔드를 BadgerDB에서 Ristretto로 교체
+- **[2020-04-12T16:00+0900]** caddy-mwcache를 적용하여 Docker Swarm 인스턴스에서 Nomad로 교체 재진행
 - **[2020-04-09+0900]** CPU 사용이 많아 Nomad 인스턴스에서 Docker Swarm 인스턴스로 회귀
 
 ## 2021-03
