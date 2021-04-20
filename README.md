@@ -10,7 +10,7 @@
 - [페미위키 디스코드 #개발 채널](https://discord.gg/umzYjJcbvH)
 - [페미위키 이슈 트래커](https://github.com/femiwiki/femiwiki/issues)
 - [페미위키 개발팀 칸반 보드](https://github.com/orgs/femiwiki/projects/1)
-- [페미위키 개발팀 블로그](https://femiwiki.com/w/%ED%8E%98%EB%AF%B8%EC%9C%84%ED%82%A4:%EA%B0%9C%EB%B0%9C_%EB%B8%94%EB%A1%9C%EA%B7%B8)
+- [페미위키 개발팀 블로그](https://femiwiki.com/w/Project:%EA%B0%9C%EB%B0%9C_%EB%B8%94%EB%A1%9C%EA%B7%B8)
 
 페미위키에 이슈나 버그, 원하시는 건의사항이 있으실 경우 언제든지 편하게 이슈를
 남겨주세요.
@@ -21,7 +21,7 @@
 --------
 페미위키는 [AWS]를 사용하고있으며, [Terraform]을 사용해 선언적으로 클라우드
 인프라를 관리하고있습니다. 페미위키에선 [Docker] 컨테이너를 사용해 서비스들을
-배포하고 있으며, [Docker Hub]에서 누구나 페미위키 컨테이너 이미지를 다운받을 수
+배포하고 있으며, [Github Container registry]에서 누구나 페미위키 컨테이너 이미지를 다운받을 수
 있습니다. 페미위키는 미디어위키 엔진을 사용하고 있고, [FemiwikiSkin],
 [Sanctions] 등 여러 미디어위키 확장을 자체개발하여 사용하고 있습니다.
 
@@ -29,18 +29,16 @@
 [AWS]: https://aws.amazon.com
 [Terraform]: https://terraform.io
 [Docker]: https://docker.com/
-[Docker Hub]: https://hub.docker.com/u/femiwiki/
+[Github Container registry]: https://github.com/orgs/femiwiki/packages?ecosystem=container
 [FemiwikiSkin]: https://github.com/femiwiki/FemiwikiSkin
 [Sanctions]: https://github.com/femiwiki/Sanctions
 
 주로 작업하는 소스코드들은 아래 링크로 확인하실 수 있으십니다.
 
 - [페미위키 테라폼](https://github.com/femiwiki/infra)
-- [페미위키 Kubernetes](https://github.com/femiwiki/kubernetes)
-- [도커 컴포즈 목록](https://github.com/femiwiki?q=docker-compose+server) (퇴역 예정)
+- [Nomad](https://github.com/femiwiki/nomad)
 - [도커 이미지 목록](https://github.com/femiwiki?q=docker-image+archived%3Ano)
-- [페미위키 서버 AMI](https://github.com/femiwiki/ami)
-- 미디어위키 플러그인
+- 미디어위키 익스텐션
   - [FemiwikiSkin]
   - [그 외 자체 개발 확장 기능들](https://github.com/femiwiki?q=mediawiki-extension+fork%3Ano)
 
