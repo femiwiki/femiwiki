@@ -4,34 +4,36 @@
 
 ## 2021-04
 
-시행착오와 함께 Docker Swarm을 Nomad로 교체, Nomad를 Terraform으로 관리하여 CD 적용됨(https://github.com/femiwiki/femiwiki/issues/4). CPU 사용을 낮추기 위해 익명 요청을 캐시하는 Caddy plugin([caddy-mwcache](https://github.com/femiwiki/caddy-wmcache))를 개발 및 적용함. 데이터베이스나 일부 보존이 필요한 데이터들을 별도 EBS로 이동(https://github.com/femiwiki/femiwiki/issues/110). X-Forwarded-For을 추가할 프록시가 없어 미디어위키가 사용자 IP 관련 처리를 못하는 것이 호스트 네트워크 사용으로 해소되었으나 의도한 바는 아님(https://github.com/femiwiki/docker-mediawiki/issues/309).
+시행착오와 함께 Docker Swarm을 Nomad로, t3a를 t4g로 교체, Nomad를 Terraform으로 관리하여 CD 적용됨(https://github.com/femiwiki/femiwiki/issues/4). CPU 사용을 낮추기 위해 익명 요청을 캐시하는 Caddy plugin([caddy-mwcache](https://github.com/femiwiki/caddy-wmcache))를 개발 및 적용함. 데이터베이스나 일부 보존이 필요한 데이터들을 별도 EBS로 이동(https://github.com/femiwiki/femiwiki/issues/110). X-Forwarded-For을 추가할 프록시가 없어 미디어위키가 사용자 IP 관련 처리를 못하는 것이 호스트 네트워크 사용으로 해소되었으나 의도한 바는 아님(https://github.com/femiwiki/docker-mediawiki/issues/309).
 
-- **[2020-04-20T17:00+0900]** Docker Swarm을 사용하던 인스턴스 삭제하고 EBS만 스냅샷으로 보존
-- **[2020-04-14T16:00+0900]** 메모리가 과다하게 사용되어 caddy-mwcache의 백엔드를 BadgerDB에서 Ristretto로 교체
-- **[2020-04-12T16:00+0900]** caddy-mwcache를 적용하여 Docker Swarm 인스턴스에서 Nomad로 교체 재진행
-- **[2020-04-09+0900]** CPU 사용이 많아 Nomad 인스턴스에서 Docker Swarm 인스턴스로 회귀
+- **[2021-04-22T07:00+0900]** 모든 서비스를 t4g 인스턴스로 이동, t3a 인스턴스 정지
+- **[2021-04-21T06:00+0900]** DB를 t4g 인스턴스로 이동
+- **[2021-04-20T17:00+0900]** Docker Swarm을 사용하던 인스턴스 EBS만 스냅샷으로 보존하고 삭제
+- **[2021-04-14T16:00+0900]** 메모리가 과다하게 사용되어 caddy-mwcache의 백엔드를 BadgerDB에서 Ristretto로 교체
+- **[2021-04-12T16:00+0900]** caddy-mwcache를 적용하여 Docker Swarm 인스턴스에서 Nomad로 교체 재진행
+- **[2021-04-09+0900]** CPU 사용이 많아 Nomad 인스턴스에서 Docker Swarm 인스턴스로 회귀
 
 ## 2021-03
 
-- **[2020-03-31T07:28+0900]** 인스턴스 둘을 이용해 블루-그린 형식으로 Docker Swarm을 Nomad로 대체 시작(https://github.com/femiwiki/femiwiki/issues/116)
-- **[2020-03-27T07:28+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-03-21t09-12-c32a248f
+- **[2021-03-31T07:28+0900]** 인스턴스 둘을 이용해 블루-그린 형식으로 Docker Swarm을 Nomad로 대체 시작(https://github.com/femiwiki/femiwiki/issues/116)
+- **[2021-03-27T07:28+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-03-21t09-12-c32a248f
   ](https://github.com/orgs/femiwiki/packages/container/mediawiki/1611726)로 교체
 
 ## 2021-02
 
-- **[2020-02-07T15:55+0900]** `aws_instance.mediawiki`에 cloudwatch-agent 설치([6e8b79d](https://github.com/femiwiki/infra/commit/6e8b79dc1325b9e12c92596d7ecfbf9fe13e6049))
-- **[2020-02-07T14:39+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-02-07t05-23-fa985a7e](https://github.com/orgs/femiwiki/packages/container/mediawiki/1050120)로 교체
-- **[2020-02-06T10:40+0900]** `aws_instance.mediawiki` 디스크 풀로 인한 장애 발생
+- **[2021-02-07T15:55+0900]** `aws_instance.mediawiki`에 cloudwatch-agent 설치([6e8b79d](https://github.com/femiwiki/infra/commit/6e8b79dc1325b9e12c92596d7ecfbf9fe13e6049))
+- **[2021-02-07T14:39+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-02-07t05-23-fa985a7e](https://github.com/orgs/femiwiki/packages/container/mediawiki/1050120)로 교체
+- **[2021-02-06T10:40+0900]** `aws_instance.mediawiki` 디스크 풀로 인한 장애 발생
 
 ## 2021-01
 
-- **[2020-01-29T12:15+0900]** `aws_instance.mediawiki` 디스크 풀로 인한 장애 발생
-- **[2020-01-16T06:30+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너에서 [a10d03f](https://github.com/femiwiki/FemiwikiSkin/commit/a10d03fb02e30c7825e00001075b79ee92553282) 수정
-- **[2020-01-16T06:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-15T05-46-c7f97198](https://github.com/orgs/femiwiki/packages/container/mediawiki/805474)로 교체
-- **[2020-01-04T07:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-03t07-06-1b3ffbbd](https://github.com/orgs/femiwiki/packages/container/mediawiki/693877)로 교체
-- **[2020-01-03T18:05+0900]** `aws_instance.mediawiki`의 `bots_backupbot` 콘테이너 도커 이미지 `ghcr.io/femiwiki/backupbot`의 태그를 [2021-01-03T07-30-0c08a25a](https://github.com/orgs/femiwiki/packages/container/backupbot/693921)로 교체
-- **[2020-01-02T05:45+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-01T20-36-1e8d9b39](https://github.com/orgs/femiwiki/packages/container/mediawiki/682784)로 교체
-- **[2020-01-02T05:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-01t03-59-f71bc7ff](https://github.com/orgs/femiwiki/packages/container/mediawiki/685721)로 교체
+- **[2021-01-29T12:15+0900]** `aws_instance.mediawiki` 디스크 풀로 인한 장애 발생
+- **[2021-01-16T06:30+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi` 콘테이너에서 [a10d03f](https://github.com/femiwiki/FemiwikiSkin/commit/a10d03fb02e30c7825e00001075b79ee92553282) 수정
+- **[2021-01-16T06:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-15T05-46-c7f97198](https://github.com/orgs/femiwiki/packages/container/mediawiki/805474)로 교체
+- **[2021-01-04T07:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-03t07-06-1b3ffbbd](https://github.com/orgs/femiwiki/packages/container/mediawiki/693877)로 교체
+- **[2021-01-03T18:05+0900]** `aws_instance.mediawiki`의 `bots_backupbot` 콘테이너 도커 이미지 `ghcr.io/femiwiki/backupbot`의 태그를 [2021-01-03T07-30-0c08a25a](https://github.com/orgs/femiwiki/packages/container/backupbot/693921)로 교체
+- **[2021-01-02T05:45+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-01T20-36-1e8d9b39](https://github.com/orgs/femiwiki/packages/container/mediawiki/682784)로 교체
+- **[2021-01-02T05:05+0900]** `aws_instance.mediawiki`의 `mediawiki_fastcgi`와 `mediawiki_http` 콘테이너 도커 이미지 `ghcr.io/femiwiki/mediawiki`의 태그를 [2021-01-01t03-59-f71bc7ff](https://github.com/orgs/femiwiki/packages/container/mediawiki/685721)로 교체
 
 ## 2020-12
 
