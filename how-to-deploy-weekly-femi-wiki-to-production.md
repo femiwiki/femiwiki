@@ -1,7 +1,5 @@
 # How to Deploy Weekly FemiWiki to Production
 
-## Docker Swarm
-
 1. Review the changes of each extension or skin since their latest releases.
 
    ```sh
@@ -14,42 +12,17 @@
    ```
 
 2. Release all extensions that has changes. Read [how-to-contribute-to-extensions.md#release] for details.
-3. Bump the extensions on [femiwiki/docker-mediawiki] repository. ([commit example](https://github.com/femiwiki/docker-mediawiki/commit/01ff89a7))
+3. Bump the extensions on [femiwiki/docker-mediawiki] repository. <!--([commit example](https://github.com/femiwiki/nomad/commit/))-->
 4. Wait for a new docker image to be built. You can see the progress of the building process in the [Github workflow page].
 5. After building, copy a new latest docker image's tag from the [Github packages page].
-6. Edit [production.yml] file and commit. ([commit example](https://github.com/femiwiki/docker-mediawiki/commit/68994922))
-7. Make sure that our database backup is stored well.
-8. Connect our AWS EC2 instance.
-9. Execute:
-
-   ```sh
-   # Go to owr mediawiki clone directory
-   cd mediawiki
-   # Checkout the latest master branch.
-   git checkout main && git pull
-
-   # If needed
-   # docker stack rm mediawiki
-
-   # Deploy the new compose file
-   docker stack deploy -c production.yml --prune mediawiki
-   # Prune docker system
-   # See https://github.com/femiwiki/femiwiki/issues/70#issuecomment-482030123
-   docker system prune -fa --volumes
-   # during docker v18
-   sudo  prlimit -n40960 -p $(pidof caddy)
-   # See status
-   # watch docker service ls
-   ```
-10. Update [CHANGELOG.md].
-
-## Nomad
-
-TBD. FemiWiki is not deployed by Nomad yet. (https://github.com/femiwiki/femiwiki/issues/116)
+6. Edit [fastcgi.nomad] file and commit. If required, edit [http.nomad] too. ([commit example](https://github.com/femiwiki/docker-mediawiki/commit/68994922))
+7. Wait that the Terraform run planned.
+8. Make sure that our database backup is stored well.
+9. Confirm the terraform apply.
 
 [how-to-contribute-to-extensions.md#release]: https://github.com/femiwiki/femiwiki/blob/main/how-to-contribute-to-extensions.md#release
 [femiwiki/docker-mediawiki]: https://github.com/femiwiki/docker-mediawiki
 [github workflow page]: https://github.com/femiwiki/docker-mediawiki/actions
 [github packages page]: https://github.com/orgs/femiwiki/packages/container/package/mediawiki
-[production.yml]: https://github.com/femiwiki/docker-mediawiki/blob/master/production.yml
-[changelog.md]: https://github.com/femiwiki/femiwiki/blob/main/CHANGELOG.md
+[fastcgi.nomad]: https://github.com/femiwiki/nomad/blob/main/jobs/fastcgi.nomad
+[http.nomad]: https://github.com/femiwiki/nomad/blob/main/jobs/http.nomad
