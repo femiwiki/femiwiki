@@ -4,8 +4,8 @@
 
    ```sh
    # Use this script to get URLs of comparison pages (python required)
-   BRANCH=REL1_35
-   EXTENSIONS="AchievementBadges FacetedCategory Sanctions UnifiedExtensionForFemiwiki FemiwikiSkin"
+   BRANCH=REL1_36
+   EXTENSIONS="AchievementBadges DiscordNotifications FacetedCategory FemiwikiSkin Sanctions UnifiedExtensionForFemiwiki"
    for EXT in $EXTENSIONS; do
      LATEST=$(curl -sL https://api.github.com/repos/femiwiki/"${EXT}"/releases/latest | python -c 'import json,sys;print(json.loads(sys.stdin.read())["tag_name"])')
      echo https://github.com/femiwiki/${EXT}/compare/"${LATEST}".."${BRANCH}"; done
