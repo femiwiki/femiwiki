@@ -3,7 +3,7 @@
 ## Branches
 
 The [compatibility policy] of FemiWiki extensions/skin is "release branches", that means for every MediaWiki release, there is a corresponding branch in the extension.
-`master` branch is the default branch where the commits pushed. But the commits on master are strongly recommended to backported in latest stable MW release(`REL1_XX`) branch which is deployed by FemiWiki website.
+`main` branch is the default branch where the commits pushed. But the commits on the main branch are strongly recommended to backported in latest stable MW release(`REL1_XX`) branch which is deployed by FemiWiki website.
 
 ## Release
 
