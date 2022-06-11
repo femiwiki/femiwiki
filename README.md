@@ -1,5 +1,5 @@
-[페미위키]
-========
+# [페미위키]
+
 페미위키 깃헙에 오신 것을 환영합니다! 페미위키는 주류 위키들의 남성 중심적이고 여성 혐오적인 정보에 반대하여 약자, 소수자를 위해 만들어진 여성주의 정보 집합체입니다.
 
 페미위키는 모든 소스코드를 오픈소스로 공개하고 있으며, 이슈트래커와 대화공간도
@@ -17,8 +17,8 @@
 
 &nbsp;
 
-페미위키 기술 개요
---------
+## 페미위키 기술 개요
+
 페미위키는 [AWS]를 사용하고있으며, [Terraform]을 사용해 선언적으로 클라우드
 인프라를 관리하고있습니다. 페미위키에선 [Docker] 컨테이너를 사용해 서비스들을
 배포하고 있으며, [Github Container registry]에서 누구나 페미위키 컨테이너 이미지를 다운받을 수
@@ -26,12 +26,12 @@
 [Sanctions] 등 여러 미디어위키 확장을 자체개발하여 사용하고 있습니다.
 
 [페미위키]: https://femiwiki.com
-[AWS]: https://aws.amazon.com
-[Terraform]: https://terraform.io
-[Docker]: https://docker.com/
-[Github Container registry]: https://github.com/orgs/femiwiki/packages?ecosystem=container
-[FemiwikiSkin]: https://github.com/femiwiki/FemiwikiSkin
-[Sanctions]: https://github.com/femiwiki/Sanctions
+[aws]: https://aws.amazon.com
+[terraform]: https://terraform.io
+[docker]: https://docker.com/
+[github container registry]: https://github.com/orgs/femiwiki/packages?ecosystem=container
+[femiwikiskin]: https://github.com/femiwiki/FemiwikiSkin
+[sanctions]: https://github.com/femiwiki/Sanctions
 
 주로 작업하는 소스코드들은 아래 링크로 확인하실 수 있으십니다.
 
@@ -44,8 +44,8 @@
 
 &nbsp;
 
-이용 허락
---------
+## 이용 허락
+
 페미위키 코드들은 기본적으로 "GNU Affero General Public License version 3"
 라이선스로 공개되어 있지만, 간혹 불가피하게 다른 라이센스를 사용하는 경우가
 있습니다. 정확한 정보는 각 Repository 안에있는 `LICENSE` 파일을 참고해주세요.
@@ -53,15 +53,15 @@
 AGPL-3.0은 미디어위키의 라이선스 정책인 "GPL-2.0 혹은 그 이상"과 호환됩니다.
 자세한 정보는 [GNU FAQ]를 참고해 주세요.
 
-[GNU FAQ]: https://www.gnu.org/licenses/gpl-faq.en.html#v2v3Compatibility
+[gnu faq]: https://www.gnu.org/licenses/gpl-faq.en.html#v2v3Compatibility
 
 &nbsp;
 
---------
+---
 
-The source code of *femiwiki/femiwiki* is primarily distributed under the terms
+The source code of _femiwiki/femiwiki_ is primarily distributed under the terms
 of the [GNU Affero General Public License v3.0] or any later version. See
 [COPYRIGHT] for details.
 
-[GNU Affero General Public License v3.0]: LICENSE
-[COPYRIGHT]: COPYRIGHT
+[gnu affero general public license v3.0]: LICENSE
+[copyright]: COPYRIGHT

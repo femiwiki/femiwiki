@@ -52,7 +52,7 @@
 
 - 파일 확장자로 `*.yml`을 사용합니다(`*.yaml`을 사용하지 않습니다).
 
-[미디어위키의 Coding Conventions]: https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Coding_conventions
+[미디어위키의 coding conventions]: https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Coding_conventions
 [prettier]: https://prettier.io/
 [mediawiki/mediawiki-codesniffer]: https://packagist.org/packages/mediawiki/mediawiki-codesniffer
 [terraform fmt]: https://www.terraform.io/docs/cli/commands/fmt.html
