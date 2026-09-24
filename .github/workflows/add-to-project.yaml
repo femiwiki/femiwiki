@@ -1,0 +1,33 @@
+---
+name: add issues to project
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: add-to-project
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: peter-murray/workflow-application-token-action@dad2b81e50ce3edeb5f3b7ffbd79f731368bd668  # v5.1.1
+        id: token
+        with:
+          application_id: ${{ vars.PAT_APPLICATION_ID }}
+          application_private_key: ${{ secrets.PAT_APPLICATION_PRIVATE_KEY }}
+
+      - name: Add open issues from every repository to the org project
+        env:
+          GH_TOKEN: ${{ steps.token.outputs.token }}
+          PROJECT_ID: PVT_kwDOAUSk484AKo0x
+          MUTATION: 'mutation($p:ID!,$c:ID!){ addProjectV2ItemById(input:{projectId:$p, contentId:$c}) { item { id } } }'
+        run: |
+          gh api --paginate -X GET search/issues \
+            -f q='org:femiwiki is:issue is:open archived:false -project:femiwiki/5' \
+            -f per_page=100 --jq '.items[] | [.node_id, .html_url] | @tsv' |
+          while IFS=$'\t' read -r node_id url; do
+            gh api graphql -f query="$MUTATION" -f p="$PROJECT_ID" -f c="$node_id" > /dev/null
+            echo "added $url"
+          done
