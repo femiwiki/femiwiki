@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "test": "yarn -s run lint",
-    "lint": "yarn -s run lint:prettier",
+    "test": "npm run -s lint",
+    "lint": "npm run -s lint:prettier",
     "lint:prettier": "prettier . --check",
     "fix": "prettier . --write"
   },
