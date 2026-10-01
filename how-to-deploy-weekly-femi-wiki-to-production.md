@@ -104,4 +104,4 @@ else.
 [femiwiki/docker-mediawiki]: https://github.com/femiwiki/docker-mediawiki
 [femiwiki/infra]: https://github.com/femiwiki/infra/pulls
 [github workflow page]: https://github.com/femiwiki/docker-mediawiki/actions
-[infra actions]: https://github.com/femiwiki/infra/actions/workflows/tofu.yaml
+[infra actions]: https://github.com/femiwiki/infra/actions/workflows/tofu.yml

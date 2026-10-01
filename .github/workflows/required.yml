@@ -7,7 +7,7 @@ on:
 permissions: {}
 jobs:
   lint:
-    uses: ./.github/workflows/lint.yaml
+    uses: ./.github/workflows/lint.yml
     permissions:
       contents: read
 
