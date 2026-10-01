@@ -54,7 +54,7 @@
 
 ## 기타
 
-- 파일 확장자로 `*.yml`을 사용합니다(`*.yaml`을 사용하지 않습니다).
+- YAML 파일은 `.github/` 아래와 `action.yml`에서 `*.yml`을, 그 밖에서는 `*.yaml`을 씁니다. 각 저장소 lint의 `extensions` 잡이 검사합니다.
 
 [미디어위키의 coding conventions]: https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Coding_conventions
 [prettier]: https://prettier.io/
