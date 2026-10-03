@@ -85,6 +85,21 @@ rather than pretending the deploy is safe. The line is in
 container from `infra`, turning it on and off again is a `tofu apply` each way.
 Announce it on `미디어위키:Sitenotice`.
 
+## Upgrading MediaWiki
+
+Before the cutover to a new MediaWiki version, list the `MediaWiki:` pages the
+new version no longer reads. Run this from a [femiwiki/docker-mediawiki]
+checkout, giving the branch production runs and then the upgrade branch:
+
+```sh
+node .github/scripts/stale-messages.mts origin/main origin/mw-1.47 https://femiwiki.com/api.php
+```
+
+A `removed` or `unread` page holds a customisation that the new version will
+ignore. Copy it to the new key before the cutover and delete the old page after
+it, or note why it can go. An `orphan` page was already unread. The 1.46
+upgrade lost VisualEditor's citation templates this way (#661).
+
 ## If it goes wrong
 
 The bump pull request only changes the image tag and the generation, so
