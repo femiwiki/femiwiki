@@ -1,0 +1,25 @@
+---
+name: Required
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions: {}
+jobs:
+  lint:
+    uses: ./.github/workflows/lint.yml
+    permissions:
+      contents: read
+
+  # The one check branch protection requires. What has to pass is the
+  # workflows called above, so adding a check does not touch femiwiki/infra.
+  required:
+    needs: [lint]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Every workflow above passed or was skipped
+        env:
+          RESULTS: ${{ toJSON(needs) }}
+        run: jq -e 'all(.[]; .result == "success" or .result == "skipped")' <<< "$RESULTS"
