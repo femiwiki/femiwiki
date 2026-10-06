@@ -4,7 +4,7 @@
 
    ```sh
    # Use this script to get URLs of comparison pages (python required)
-   BRANCH=REL1_43
+   BRANCH=main
    EXTENSIONS='
      AchievementBadges
      DiscordRCFeed
