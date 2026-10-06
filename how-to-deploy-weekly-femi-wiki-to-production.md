@@ -1,60 +1,35 @@
 # How to Deploy Weekly FemiWiki to Production
 
-1. Review the changes of each extension or skin since their latest releases.
-
-   ```sh
-   # Use this script to get URLs of comparison pages (python required)
-   BRANCH=main
-   EXTENSIONS='
-     AchievementBadges
-     DiscordRCFeed
-     FacetedCategory
-     FemiwikiSkin
-     PageViewInfoGA
-     Sanctions
-     UnifiedExtensionForFemiwiki
-   '
-   for EXT in $EXTENSIONS; do
-     LATEST=$(curl -sL https://api.github.com/repos/femiwiki/"${EXT}"/releases/latest | python -c 'import json,sys;print(json.loads(sys.stdin.read())["tag_name"])')
-     echo https://github.com/femiwiki/${EXT}/compare/"${LATEST}".."${BRANCH}"; done
-   ```
-
-2. Release all extensions that has changes. Read [how-to-contribute-to-extensions.md#release] for details.
-3. Bump the extensions on [femiwiki/docker-mediawiki] repository.
-4. Wait for the image build. The [Github workflow page] shows it, and when it
+1. Merge the change into the `main` of FemiwikiSkin or UnifiedExtensionForFemiwiki.
+   A bot opens a pull request on [femiwiki/docker-mediawiki] that pins the new
+   commit, and the image bumps that follow merge on their own once green. The
+   other extensions follow the branches in `extensions.json` and are bumped by
+   a monthly workflow on [femiwiki/docker-mediawiki].
+2. Wait for the image build. The [Github workflow page] shows it, and when it
    finishes a pull request bumping the image tag opens on [femiwiki/infra] by
    itself. Nothing needs copying by hand.
-5. **Decide whether this release carries a schema change**, and if it does, read
+3. **Decide whether this release carries a schema change**, and if it does, read
    [Releases that change the schema](#releases-that-change-the-schema) below
    before going on. A release that needs `update.php` is not a zero-downtime
    release.
-6. Make sure the database backup is stored well.
-7. Check the bump pull request is not behind `main`:
+4. Make sure the database backup is stored well.
+5. Approve the `docker` environment on the bump pull request's run under
+   [infra Actions]. **The approval is what applies to production, not the
+   merge.** It is offered only once the pull request's required checks pass
+   and it has no conflict. A branch behind `main` may still be applied: the
+   apply makes a fresh plan and refuses if `main` changed the same workspace,
+   in which case merge `main` into the branch and approve the new run.
+6. Watch the apply. On success it re-plans on the same runner, fails if
+   anything is left over, and merges the pull request itself.
+7. Check that the wiki is up, and that the container generation moved:
 
    ```sh
-   gh api repos/femiwiki/infra/compare/main...bump-femiwiki-image --jq .behind_by
+   curl -o /dev/null -w '%{http_code} %{time_total}s\n' https://femiwiki.com/w/페미위키:대문
    ```
-
-   Anything but `0` means the apply will be refused, because a plan from a
-   branch that is behind describes a tree that no longer exists. Update the
-   branch first.
-
-8. Comment `tofu apply` on that pull request. **The comment is what applies to
-   production, not the merge.** The `docker` workspace is applied from GitHub
-   Actions before the merge; only `aws` and `github` are applied by Terraform
-   Cloud on merge.
-9. Watch the run under [infra Actions]. On success it re-plans on the same
-   runner, fails if anything is left over, and merges the pull request itself.
-   There is no Terraform Cloud run to watch for this.
-10. Check that the wiki is up, and that the container generation moved:
-
-    ```sh
-    curl -o /dev/null -w '%{http_code} %{time_total}s\n' https://femiwiki.com/w/페미위키:대문
-    ```
 
 ## Releases that change the schema
 
-`MEDIAWIKI_SKIP_UPDATE=1` is set on both containers, so nothing runs
+`MEDIAWIKI_SKIP_UPDATE=1` is set on the `fastcgi` container, so nothing runs
 `update.php` on its own. It is a deliberate, one-shot step against the shared
 database, and it is the step that makes a release not zero-downtime.
 
@@ -74,14 +49,9 @@ rules:
 - **Say which it is.** Note in the pull request whether the release carries a
   schema change and which half it is.
 
-There is a live example in the tree: `$wgBlockTargetMigrationStage` is
-`SCHEMA_COMPAT_WRITE_BOTH | SCHEMA_COMPAT_READ_OLD`, which is the additive half
-of a migration that has not finished. Whatever moves it to read the new shape,
-or drops the old column, is the destructive half.
-
 When a change genuinely cannot be made additive, take the read-only window
 rather than pretending the deploy is safe. The line is in
-`infra/docker/res/Hotfix.php`, commented out; since that file is passed to the
+`infra/serving/Hotfix.php`, commented out; since that file is passed to the
 container from `infra`, turning it on and off again is a `tofu apply` each way.
 Announce it on `미디어위키:Sitenotice`.
 
@@ -100,7 +70,6 @@ against `main` and takes production back. The apply merges its own pull request
 for this reason; if that ever fails, merge it by hand before applying anything
 else.
 
-[how-to-contribute-to-extensions.md#release]: https://github.com/femiwiki/femiwiki/blob/main/how-to-contribute-to-extensions.md#release
 [femiwiki/docker-mediawiki]: https://github.com/femiwiki/docker-mediawiki
 [femiwiki/infra]: https://github.com/femiwiki/infra/pulls
 [github workflow page]: https://github.com/femiwiki/docker-mediawiki/actions
