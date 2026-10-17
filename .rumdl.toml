@@ -1,3 +1,4 @@
-# A Marp slide deck: each slide opens with its own top-level heading
+# A Marp slide deck: each slide opens with its own top-level heading, and
+# Marp turns every newline into a line break, so its lines stay unwrapped
 [per-file-ignores]
-"ko/프론트엔드 기여 가이드.md" = ["MD024", "MD025"]
+"ko/프론트엔드 기여 가이드.md" = ["MD013", "MD024", "MD025"]
