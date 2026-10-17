@@ -15,7 +15,7 @@
 
 ## Markdown
 
-- [rumdl]을 적용합니다. 줄 길이 규칙(MD013)은 끄고, release-please가 쓰는 `CHANGELOG.md`는 검사하지 않습니다.
+- [rumdl]을 적용합니다. 단, release-please가 생성하는 `CHANGELOG.md`는 예외로 둡니다.
 - 봇이 쓰는 Markdown은 커밋하기 전에 `rumdl fmt`를 거칩니다.
 
 ## YAML
