@@ -1,3 +1,5 @@
+# Automations
+
 | Task      | [Zapier]           | [Integromat]       | [Automate.io] | interval                    |
 | --------- | ------------------ | ------------------ | ------------- | --------------------------- |
 | Gmail     |                    | :heavy_check_mark: |               | Once an hour(exclude 02-06) |
