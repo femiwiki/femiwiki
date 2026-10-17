@@ -10,6 +10,7 @@ The [compatibility policy] of FemiWiki extensions/skin is "release branches", th
 1. Checkout the latest stable MediaWiki release branch (not master): `git checkout REL1_XX && git pull`.
 2. Update the CHANGELOG.md
 3. Edit "version" of extension.json or skin.json
+
 4. ```sh
     NAME=OurExtension
     # NAME=$(basename $(pwd))
@@ -22,6 +23,7 @@ The [compatibility policy] of FemiWiki extensions/skin is "release branches", th
     # Push the commit and the tag
     git push origin --follow-tags
    ```
+
 5. (optional) Copy changelog from the file to the release page.
 
 Then PR for that release to [docker-mediawiki repository] will be created automaticlly.
