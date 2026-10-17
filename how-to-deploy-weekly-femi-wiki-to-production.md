@@ -1,10 +1,11 @@
 # How to Deploy Weekly FemiWiki to Production
 
-1. Merge the change into the `main` of FemiwikiSkin or UnifiedExtensionForFemiwiki.
-   A bot opens a pull request on [femiwiki/docker-mediawiki] that pins the new
-   commit, and the image bumps that follow merge on their own once green. The
-   other extensions follow the branches in `extensions.json` and are bumped by
-   a monthly workflow on [femiwiki/docker-mediawiki].
+1. Merge the change into the `main` of FemiwikiSkin or
+   UnifiedExtensionForFemiwiki. A bot opens a pull request on
+   [femiwiki/docker-mediawiki] that pins the new commit, and the image bumps
+   that follow merge on their own once green. The other extensions follow the
+   branches in `extensions.json` and are bumped by a monthly workflow on
+   [femiwiki/docker-mediawiki].
 2. Wait for the image build. The [Github workflow page] shows it, and when it
    finishes a pull request bumping the image tag opens on [femiwiki/infra] by
    itself. Nothing needs copying by hand.
