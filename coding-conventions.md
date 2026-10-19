@@ -33,6 +33,14 @@
 ## Terraform
 
 - [terraform fmt] 적용
+- `.tf`를 스크립트로 고칠 때는 `sed`나 문자열 치환 대신 [hcledit]으로 속성이나
+  블록을 주소로 지정해 고칩니다. 주변 코드가 스크립트의 예상과 달라도 엉뚱한 곳을
+  고치지 않습니다.
+
+  ```sh
+  hcledit attribute set locals.schema_update_generation 145 -f locals.tf -u
+  hcledit attribute get resource.docker_container.http.image -f container.tf
+  ```
 
 ## HCL
 
@@ -87,4 +95,5 @@
 [mediawiki/mediawiki-codesniffer]: https://packagist.org/packages/mediawiki/mediawiki-codesniffer
 [terraform fmt]: https://www.terraform.io/docs/cli/commands/fmt.html
 [hclfmt]: https://pkg.go.dev/github.com/hashicorp/hcl/v2/cmd/hclfmt
+[hcledit]: https://github.com/minamijoyo/hcledit
 [페미위키:업데이트]: https://femiwiki.com/w/페미위키:업데이트
