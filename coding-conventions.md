@@ -7,8 +7,8 @@
 
 ## JavaScript / TypeScript / JSON / CSS
 
-- [Biome]의 기본값(탭, 큰따옴표)을 따릅니다. `biome ci`가 포맷, 권장 린트 규칙,
-  import 정렬을 검사합니다.
+- [Biome]의 기본값(탭, 큰따옴표, 후행 쉼표 `all`)을 따릅니다. `biome ci`가
+  포맷, 권장 린트 규칙, import 정렬을 검사합니다.
 - 저장소마다 검사에서 뺄 파일(translatewiki가 관리하는 `i18n/`, 생성된 파일
   등)은 그 저장소의 `.biome.json`에 적습니다.
 
@@ -28,7 +28,28 @@
 
 ## Python
 
-- 미정
+- [Ruff]의 `ruff check`와 `ruff format --check`를 적용합니다. 줄 길이와 추가
+  규칙은 저장소마다 `pyproject.toml`에 적습니다.
+
+## Shell Script
+
+- [ShellCheck]를 적용합니다. 포맷 도구는 두지 않습니다.
+
+## TOML
+
+- [Taplo]의 `taplo fmt --check`를 적용합니다.
+
+## Dockerfile
+
+- [Hadolint]를 적용합니다.
+
+## GitHub Actions
+
+- 워크플로는 [actionlint]와 [zizmor]로 검사합니다.
+
+## Lua
+
+- [StyLua]를 적용합니다.
 
 ## Terraform
 
@@ -46,21 +67,14 @@
 
 - [hclfmt] 적용
 
-## Rust
-
-- 미정
-
 ## Golang
 
-- 미정
+- [golangci-lint]를 적용하며, 포맷은 golangci-lint의 gofmt와 goimports
+  포매터로 검사합니다.
 
 ## Mustache
 
-- 미정
-
-## Ruby
-
-- 미정
+- 미정. 아직 검사 도구가 없습니다.
 
 ## Actions 시크릿
 
@@ -82,8 +96,9 @@
 
 ## 기타
 
-- Biome, rumdl, yamllint는 femiwiki/.github의 `shared-lint.yml`이 각 저장소에서
-  실행합니다. 따로 설치하는 `package.json`은 두지 않습니다.
+- Biome, Prettier, rumdl, yamllint, zizmor는 femiwiki/.github의
+  `shared-lint.yml`이 각 저장소에서 실행합니다. 따로 설치하는 `package.json`은
+  두지 않습니다.
 - YAML 파일은 `.github/` 아래와 `action.yml`에서 `*.yml`을, 그 밖에서는
   `*.yaml`을 씁니다. 각 저장소 lint의 `extensions` 잡이 검사합니다.
 
@@ -92,6 +107,14 @@
 [prettier]: https://prettier.io/
 [rumdl]: https://github.com/rvben/rumdl
 [yamllint]: https://yamllint.readthedocs.io/
+[ruff]: https://docs.astral.sh/ruff/
+[shellcheck]: https://www.shellcheck.net/
+[taplo]: https://taplo.tamasfe.dev/
+[hadolint]: https://github.com/hadolint/hadolint
+[actionlint]: https://github.com/rhysd/actionlint
+[zizmor]: https://docs.zizmor.sh/
+[stylua]: https://github.com/JohnnyMorganz/StyLua
+[golangci-lint]: https://golangci-lint.run/
 [mediawiki/mediawiki-codesniffer]: https://packagist.org/packages/mediawiki/mediawiki-codesniffer
 [terraform fmt]: https://www.terraform.io/docs/cli/commands/fmt.html
 [hclfmt]: https://pkg.go.dev/github.com/hashicorp/hcl/v2/cmd/hclfmt
