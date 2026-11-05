@@ -7,12 +7,12 @@ on:
 permissions: {}
 jobs:
   long-comments:
-    uses: femiwiki/.github/.github/workflows/long-comments.yml@54ec5dda70e2016dc8460cfd7392bfc56aa5cb7c
+    uses: femiwiki/.github/.github/workflows/long-comments.yml@c7a2145630ac96a51c74a94a7b508c27ab0de134
     permissions:
       contents: read
 
   shared-lint:
-    uses: femiwiki/.github/.github/workflows/shared-lint.yml@54ec5dda70e2016dc8460cfd7392bfc56aa5cb7c
+    uses: femiwiki/.github/.github/workflows/shared-lint.yml@c7a2145630ac96a51c74a94a7b508c27ab0de134
     permissions:
       contents: read
 
