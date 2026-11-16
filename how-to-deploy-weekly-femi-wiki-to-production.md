@@ -1,4 +1,4 @@
-# How to Deploy Weekly FemiWiki to Production
+# How to Deploy Weekly Femiwiki to Production
 
 1. Merge the change into the `main` of FemiwikiSkin or
    UnifiedExtensionForFemiwiki. A bot opens a pull request on
